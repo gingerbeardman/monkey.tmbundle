@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>SetScissor ${1:sx#},${2:sy#}, ${3:sw#},${4:sh#}$5</string>
+	<key>name</key>
+	<string>SetScissor</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>setscissor</string>
+	<key>uuid</key>
+	<string>FF383C6E-354B-4332-B8E3-3C3B0AF030F0</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>'buildopt: android</string>
+	<key>name</key>
+	<string>Build as android</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>android</string>
+	<key>uuid</key>
+	<string>129DDD03-9EFB-4BA2-A6EE-E92C2E305AFB</string>
+</dict>
+</plist>

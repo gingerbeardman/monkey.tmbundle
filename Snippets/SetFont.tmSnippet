@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>SetFont ${1:fontImage}, ${2:firstChar=32}$3</string>
+	<key>name</key>
+	<string>SetFont</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>setfont</string>
+	<key>uuid</key>
+	<string>5089A089-71CB-4FD5-93AF-82DF3ABE3A15</string>
+</dict>
+</plist>

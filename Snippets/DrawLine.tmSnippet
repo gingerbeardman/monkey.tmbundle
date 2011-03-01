@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>DrawLine ${1:x1#},${2:y1#}, ${3:x2#},${4:y2#}$5</string>
+	<key>name</key>
+	<string>DrawLine</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>drawline</string>
+	<key>uuid</key>
+	<string>47986C2F-EEEA-41C5-B5E7-4BAD857692E9</string>
+</dict>
+</plist>

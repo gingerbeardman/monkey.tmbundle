@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:rect#[]} = GetScissor()$2</string>
+	<key>name</key>
+	<string>GetScissor</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>getscissor</string>
+	<key>uuid</key>
+	<string>6CFDD629-2606-40AF-A81A-EDDEA3EBB2D2</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:y#} = TouchY( ${2:index=0} )$3</string>
+	<key>name</key>
+	<string>TouchY</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>touchy</string>
+	<key>uuid</key>
+	<string>DBBB83AB-7279-4B3E-82B7-BB5379D2AA63</string>
+</dict>
+</plist>

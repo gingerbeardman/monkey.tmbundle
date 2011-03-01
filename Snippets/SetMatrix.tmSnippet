@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>SetMatrix ${1:ix#},${2:iy#}, ${3:jx#},${4:jy#}, ${5:tx#},${6:ty#}$7</string>
+	<key>name</key>
+	<string>SetMatrix</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>setmatrix</string>
+	<key>uuid</key>
+	<string>4CEA2044-DA77-437B-B646-F983AEE664E5</string>
+</dict>
+</plist>

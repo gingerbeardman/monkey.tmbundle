@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:count} = MouseHit( ${2:button=MOUSE_LEFT} )$3</string>
+	<key>name</key>
+	<string>MouseHit</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>mousehit</string>
+	<key>uuid</key>
+	<string>2CD9DC3C-DDC7-49B0-8567-29183E1AECC3</string>
+</dict>
+</plist>

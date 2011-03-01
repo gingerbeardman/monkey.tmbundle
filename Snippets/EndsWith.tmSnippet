@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>EndsWith( "${1:subString}" )$2</string>
+	<key>name</key>
+	<string>EndsWith</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>endswith</string>
+	<key>uuid</key>
+	<string>FEB3C555-0D5D-4C3A-8959-EFF8E4EAB4B2</string>
+</dict>
+</plist>

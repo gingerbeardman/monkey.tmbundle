@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>DrawCircle ${1:x#},${2:y#}, ${3:x_radius#},${4:y_radius#}$5</string>
+	<key>name</key>
+	<string>DrawCircle</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>drawcircle</string>
+	<key>uuid</key>
+	<string>CAF1A0E5-4111-45DB-97FD-9342C513C80E</string>
+</dict>
+</plist>

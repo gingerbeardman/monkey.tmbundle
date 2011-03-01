@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Millisecs()$1</string>
+	<key>name</key>
+	<string>Millisecs</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>millisecs</string>
+	<key>uuid</key>
+	<string>F14000F5-3249-4028-8926-A7FE3797E228</string>
+</dict>
+</plist>

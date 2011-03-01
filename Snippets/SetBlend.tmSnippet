@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>SetBlend( ${1:mode} )$2</string>
+	<key>name</key>
+	<string>SetBlend</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>setblend</string>
+	<key>uuid</key>
+	<string>6D615BB2-FE7D-4E8B-9C56-0AC9CC08A0FC</string>
+</dict>
+</plist>

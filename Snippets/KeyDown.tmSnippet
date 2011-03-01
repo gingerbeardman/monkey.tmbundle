@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:bool} = KeyDown( ${2:keycode} )$3</string>
+	<key>name</key>
+	<string>KeyDown</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>keydown</string>
+	<key>uuid</key>
+	<string>93EDEE16-FD9B-4DFD-8412-2C3F4BAD22AF</string>
+</dict>
+</plist>

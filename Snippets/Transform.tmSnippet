@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Transform ${1:ix#},${2:iy#}, ${3:jx#},${4:jy#}, ${5:tx#},${6:ty#}$7</string>
+	<key>name</key>
+	<string>Transform</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>transform</string>
+	<key>uuid</key>
+	<string>81844239-8A6C-4403-B073-8C7CD9DE5517</string>
+</dict>
+</plist>

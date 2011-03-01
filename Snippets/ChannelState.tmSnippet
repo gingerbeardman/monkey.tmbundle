@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:state} = ChannelState( ${2:channel} )$3</string>
+	<key>name</key>
+	<string>ChannelState</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>channelstate</string>
+	<key>uuid</key>
+	<string>2548A0BA-7831-4822-8600-C8F6589AC000</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>'buildopt: xna</string>
+	<key>name</key>
+	<string>Build as xna</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>xna</string>
+	<key>uuid</key>
+	<string>50776D0B-7A18-40D7-A735-574309B6F51A</string>
+</dict>
+</plist>

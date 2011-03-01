@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>SetAlpha( ${1:alpha} )$2</string>
+	<key>name</key>
+	<string>SetAlpha</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>setalpha</string>
+	<key>uuid</key>
+	<string>6E912688-B7FA-474C-AC5C-719DE4C5A03C</string>
+</dict>
+</plist>

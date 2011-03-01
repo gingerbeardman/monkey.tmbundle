@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Import ${1:system.lang/system.list/system.map/system.math/system.random/mojo.app/mojo.audio/mojo.graphics/mojo.input}$2</string>
+	<key>name</key>
+	<string>Import</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>import</string>
+	<key>uuid</key>
+	<string>79AF85A6-262C-4C0E-9062-B580FF27B2DD</string>
+</dict>
+</plist>

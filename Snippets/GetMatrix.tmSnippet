@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:matrix#[]} = GetMatrix()$2</string>
+	<key>name</key>
+	<string>GetMatrix</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>getmatrix</string>
+	<key>uuid</key>
+	<string>822847AE-0CB9-4606-BB10-41278BCFD513</string>
+</dict>
+</plist>

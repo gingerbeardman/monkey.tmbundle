@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string># if TM_MONKEY is not set, assume trans_mac to be in the user's PATH
+if [[ -n "$TM_MONKEY" ]] ; then
+	TRANS="$TM_MONKEY/bin/trans_macos"
+else
+	exit_show_tool_tip \
+"TM_MONKEY shell variable not set.
+
+Please see the Help (⌃⌘T Help) command for more information."
+fi
+
+MNKY_COMPILE_DIR=$TM_DIRECTORY
+
+# set up
+if [[ -n "$TM_MONKEY_MAIN_FILE" &amp;&amp; -n "$TM_PROJECT_DIRECTORY" ]] ; then
+	# Project build
+	cd "$TM_PROJECT_DIRECTORY"
+	MNKY_COMPILE_DIR=$TM_PROJECT_DIRECTORY
+	MNKY_COMPILE_PATH=$TM_MONKEY_MAIN_FILE
+else
+	if [[ -n "$TM_DIRECTORY" ]] ; then
+		# Change to the file's directory if possible
+		cd "$TM_DIRECTORY"
+	fi
+	MNKY_COMPILE_PATH=$TM_FILEPATH
+fi
+
+. "$TM_SUPPORT_PATH/lib/webpreview.sh"
+html_header "Build App" "$MNKY_COMPILE_PATH"
+
+# fail if the path is not set
+if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
+
+	# compensate for Win32 / E paths
+	if [[ "$MACHTYPE" == "i686-pc-cygwin" ]] ; then
+		MNKY_COMPILE_PATH=`cygpath -m "$MNKY_COMPILE_PATH"`
+	fi
+
+	MODGREP=`grep -i -E -e "^[[:space:]]*module[[:space:]]+(\w+\.\w+)" "$MNKY_COMPILE_PATH" | grep -E -e "\w+\.\w+" -o | tr '[:upper:]' '[:lower:]'`
+
+	#scan for build options
+	TARGET='html5'
+	CONFIG='debug'
+	RUNAFTER=''
+	CLEAN=''
+
+	for BUILDOPT in `grep -hiE -e "^[^\\w\\d]*'[^\\w\\d]*buildopt:[^\\d\\w]*\\w+" "$MNKY_COMPILE_PATH" | \
+		ruby -w -e "puts STDIN.read().downcase().gsub(/^\s*'\s*buildopt:\s*/,\"\")"` ;
+	do
+		case "$BUILDOPT" in
+		'run')
+			RUNAFTER='YES'
+		;;
+		'debug')
+			CONFIG='debug'
+		;;
+		'release')
+			CONFIG='release'
+		;;
+		'html5')
+			TARGET='html5'
+		;;
+		'flash')
+			TARGET='flash'
+		;;
+		'xna')
+			TARGET='xna'
+		;;
+		'android')
+			TARGET='android'
+		;;
+		'ios')
+			TARGET='ios'
+		;;
+		'glfw')
+			TARGET='glfw'
+		;;
+		'stdcpp')
+			TARGET='stdcpp'
+		;;
+		esac
+	done
+
+	echo "&lt;ul&gt;"
+	echo "&lt;li&gt;Building as $TARGET&lt;/li&gt;"
+
+	if [[ "$CLEANBUILD" == "YES" ]] ; then
+		BUILDOPTS="$BUILDOPTS -clean"
+		echo "&lt;li&gt;Clean build&lt;/li&gt;"
+	fi
+
+	if [[ "$RUNAFTER" == "YES" ]] ; then
+		BUILDOPTS="$BUILDOPTS -run"
+		echo "&lt;li&gt;Run afterwards&lt;/li&gt;"
+	fi
+
+	if [[ "$CONFIG" == "debug" ]] ; then
+		echo "&lt;li&gt;Debug enabled&lt;/li&gt;"
+	fi
+	BUILDOPTS="$BUILDOPTS -config=$CONFIG"
+
+	BUILDOPTS="$BUILDOPTS -target=$TARGET"
+
+	echo "&lt;/ul&gt;"
+
+	# build/fail?
+	if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
+		echo "&lt;pre&gt;$ trans_macos$BUILDOPTS \"$MNKY_COMPILE_PATH\"&lt;/pre&gt;"
+		echo "&lt;blockquote&gt;"
+		$TRANS $BUILDOPTS "$MNKY_COMPILE_PATH" 2&gt;&amp;1
+		echo "&lt;/blockquote&gt;"
+		echo "Build finished"
+	fi
+
+else
+	pre "Build failed"
+fi
+
+exit_show_html</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@b</string>
+	<key>name</key>
+	<string>Build</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>uuid</key>
+	<string>3146F9B6-03B6-429C-959D-2A8C405869DB</string>
+</dict>
+</plist>

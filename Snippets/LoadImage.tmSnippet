@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:image} = LoadImage( "${2:image.png}", ${3:1}, ${4:Image.MidHandle} )$5</string>
+	<key>name</key>
+	<string>LoadImage</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>loadimage</string>
+	<key>uuid</key>
+	<string>316A6933-78F5-44C5-A716-5548CA07B1AE</string>
+</dict>
+</plist>

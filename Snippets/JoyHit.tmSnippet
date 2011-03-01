@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:count} = JoyHit( ${2:button} )$3</string>
+	<key>name</key>
+	<string>JoyHit</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>joyhit</string>
+	<key>uuid</key>
+	<string>EC95D93A-906B-413D-914F-54CD838CA755</string>
+</dict>
+</plist>

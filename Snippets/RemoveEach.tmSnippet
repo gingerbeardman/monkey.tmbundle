@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>RemoveEach( ${1:value/key} )$2</string>
+	<key>name</key>
+	<string>RemoveEach</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>removeeach</string>
+	<key>uuid</key>
+	<string>A8E1A00C-6B1F-4DFD-949B-4CBBB4AD8C9E</string>
+</dict>
+</plist>

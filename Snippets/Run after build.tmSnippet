@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>'buildopt: run</string>
+	<key>name</key>
+	<string>Run after build</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>run</string>
+	<key>uuid</key>
+	<string>BC17DDD1-1196-46F7-AA3B-E5BCDD5E6656</string>
+</dict>
+</plist>

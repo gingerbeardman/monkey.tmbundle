@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>SetUpdateRate ${1:hertz}$2</string>
+	<key>name</key>
+	<string>SetUpdateRate</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>setupdaterate</string>
+	<key>uuid</key>
+	<string>B48CD479-5BFC-4D69-A2BC-24CE5B11BCE2</string>
+</dict>
+</plist>

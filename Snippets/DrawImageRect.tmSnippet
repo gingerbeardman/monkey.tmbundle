@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>DrawImageRect ${1:image:Image}, ${2:x#},${3:y#}, ${4:srcX},${5:srcY}, ${6:srcWidth},${7:srcHeight}, ${8:frame=0}$9</string>
+	<key>name</key>
+	<string>DrawImageRect</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>drawimagerect</string>
+	<key>uuid</key>
+	<string>52C48295-F5D9-4163-BA41-89C6B542CF75</string>
+</dict>
+</plist>

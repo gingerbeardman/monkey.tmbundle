@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>'buildopt: ios</string>
+	<key>name</key>
+	<string>Build ios</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>ios</string>
+	<key>uuid</key>
+	<string>6C9A96D9-D8AB-4054-89B3-52457CABF375</string>
+</dict>
+</plist>

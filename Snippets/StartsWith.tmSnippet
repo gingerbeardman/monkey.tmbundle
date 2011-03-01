@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>StartsWith( "${1:subString}" )$2</string>
+	<key>name</key>
+	<string>StartsWith</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>startswith</string>
+	<key>uuid</key>
+	<string>8C60ED00-6430-497E-BAFD-5632EB775A86</string>
+</dict>
+</plist>

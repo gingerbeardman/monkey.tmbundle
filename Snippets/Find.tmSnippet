@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Find( "${1:string}"${2:, ${3:start=0}} )$4</string>
+	<key>name</key>
+	<string>Find</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>find</string>
+	<key>uuid</key>
+	<string>9BF3CCED-1E74-48FA-AB76-A1FC4F748318</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>SetChannelVolume( ${1:channel}, ${2:rate#} )$3</string>
+	<key>name</key>
+	<string>SetChannelVolume</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>setchannelvolume</string>
+	<key>uuid</key>
+	<string>C5203C70-8876-4B41-A75E-3902EE775304</string>
+</dict>
+</plist>

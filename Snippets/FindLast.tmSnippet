@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>FindLast( "${1:string}"${2:, ${3:start=0}} )$4</string>
+	<key>name</key>
+	<string>FindLast</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>findlast</string>
+	<key>uuid</key>
+	<string>7BD7390A-34DB-4532-A69A-598511E14109</string>
+</dict>
+</plist>

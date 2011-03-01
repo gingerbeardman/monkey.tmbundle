@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>SetChannelRate( ${1:channel}, ${2:rate#} )$3</string>
+	<key>name</key>
+	<string>SetChannelRate</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>setchannelrate</string>
+	<key>uuid</key>
+	<string>C2CD5E42-209D-40D1-83B7-AD89FDE1C7CE</string>
+</dict>
+</plist>

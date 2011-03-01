@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:bool} = JoyDown( ${2:button} )$3</string>
+	<key>name</key>
+	<string>JoyDown</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>joydown</string>
+	<key>uuid</key>
+	<string>7476D91D-3D54-425A-8316-146C75992DB4</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:z#} = AccelZ()$2</string>
+	<key>name</key>
+	<string>AccelZ</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>accelz</string>
+	<key>uuid</key>
+	<string>B4752D5C-19B2-4127-867A-6C358590B905</string>
+</dict>
+</plist>

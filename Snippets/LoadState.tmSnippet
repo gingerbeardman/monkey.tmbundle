@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:state} = LoadState()$2</string>
+	<key>name</key>
+	<string>LoadState</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>loadstate</string>
+	<key>uuid</key>
+	<string>46702088-F120-4C38-9E1E-5B2A89AB6290</string>
+</dict>
+</plist>

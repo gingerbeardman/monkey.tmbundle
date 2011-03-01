@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>SaveState "${1:state}"$2</string>
+	<key>name</key>
+	<string>SaveState</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>savestate</string>
+	<key>uuid</key>
+	<string>9B841970-D802-4D97-9C85-CA34827CEBA5</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:bool} = TouchDown( ${2:index=0} )$3</string>
+	<key>name</key>
+	<string>TouchDown</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>touchdown</string>
+	<key>uuid</key>
+	<string>7E7072D9-3BD9-41BD-845A-B94CFEAF3DA9</string>
+</dict>
+</plist>

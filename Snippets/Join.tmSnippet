@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>Join( ${1:bits$[]} )$2</string>
+	<key>name</key>
+	<string>Join</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>join</string>
+	<key>uuid</key>
+	<string>44D180FE-6DAB-46BE-A51D-EA3FF2A382A0</string>
+</dict>
+</plist>

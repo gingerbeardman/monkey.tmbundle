@@ -36,7 +36,7 @@ To use unzip and double click, or manually move the bundle to:
 
 ### Setup
 
-Before you can use the _monkey_ bundle, you must first set the TM\_MONKEY shell variable.
+Before you can use the _monkey_ bundle, you must first set the `TM_MONKEY` shell variable.
 
 To do this, open TextMate's preferences (⌘,) and navigate to the _Advanced_ pane.  Select the _Shell Variables_ tab and add the TM\_MONKEY variable, where its value is the location of your _monkey_ installation.  For example, "/Developer/Applications/monkey".  Do not include a trailing slash in the path.
 
@@ -44,13 +44,13 @@ This variable allows you to build your applications (⌘B). Documentation and tr
 
 ### Using Projects
 
-When using projects, you can set the TM\_MONKEY\_MAIN\_FILE shell variable for your project and specify the main _monkey_ file to build when you use the Build App (⌘B) command.
+When using projects, you can set the `TM_MONKEY_MAIN_FILE` shell variable for your project and specify the main _monkey_ file to build when you use the Build App (⌘B) command.
 
-To set this variable, open the project drawer and deselect any files, then click the "i" button at the bottom of the drawer to open the project info.  Add the TM\_MONKEY\_MAIN\_FILE variable, and set its value to the file relative to the main file project's directory.
+To set this variable, open the project drawer and deselect any files, then click the "i" button at the bottom of the drawer to open the project info.  Add the `TM_MONKEY_MAIN_FILE` variable, and set its value to the file relative to the main file project's directory.
 
 ### Build Options
 
-When using the Build App and Run App commands, your main source file (either the file you have open or the one specified by TM\_MONKEY\_MAIN\_FILE) is quickly scanned for a set of build options to determine how to build and/or run the results.  These build options are available under the Build Options snippets, and are as follows:
+When using the Build App and Run App commands, your main source file (either the file you have open or the one specified by `TM_MONKEY_MAIN_FILE`) is quickly scanned for a set of build options to determine how to build and/or run the results.  These build options are available under the Build Options snippets, and are as follows:
 
 - **Release & Debug** - `debug`, `release`  
 Specifies whether or not to compile the program in debug mode.

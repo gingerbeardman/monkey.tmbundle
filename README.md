@@ -73,9 +73,8 @@ monkey.tmundle is made available under a [Creative Commons Attribution-Share Ali
 You can talk about the bundle on the [official monkey forum](http://www.monkeycoder.co.nz/Community/posts.php?topic=69)
 
 ## Requirements
-
-TextMate [http://macromates.com](http://macromates.com)
-monkey [http://www.monkeycoder.co.nz](http://www.monkeycoder.co.nz)
+- TextMate [http://macromates.com](http://macromates.com)
+- monkey [http://www.monkeycoder.co.nz](http://www.monkeycoder.co.nz)
 
 ## Changelog
 

@@ -3,6 +3,7 @@ monkey.tmbundle
 
 This bundle lets you to use the Mac OS X editor TextMate as an IDE for the monkey programming language. It is based in part on the existing [blitzmax.bundle](https://github.com/nilium/blitzmax.tmbundle) so thanks to Nilium for that.
 
+
 ## Features
 
 **Auto Completion of Keywords**  
@@ -30,9 +31,6 @@ One click skeleton template to get you started, build to see instant results
 To use unzip and double click, or manually move the bundle to:  
 `/Users/username/Library/Application Support/TextMate/Bundles/monkey.tmbundle`
 
-You'll need to set the `TM_MONKEY` environment variable in TextMate (_Preferences/Advanced/Shell Variables_) to the path of your monkey installation, eg. `/Developer/Applications/monkey` (no trailing slash). 
-
-There is more about setup and usage of the bundle after installation in the _Bundles/monkey/Help_ menu. 
 
 ## Usage
 
@@ -54,11 +52,11 @@ To set this variable, open the project drawer and deselect any files, then click
 
 When using the Build App and Run App commands, your main source file (either the file you have open or the one specified by TM\_MONKEY\_MAIN\_FILE) is quickly scanned for a set of build options to determine how to build and/or run the results.  These build options are available under the Build Options snippets, and are as follows:
 
-* **Release & Debug** - *debug, release*  
+- **Release & Debug** - `debug`, `release`  
 Specifies whether or not to compile the program in debug mode.
-* **Target** - *html5, flash, xna, android, ios, glfw, stdcpp*  
+- **Target** - `html5`, `flash`, `xna`, `android`, `ios`, `glfw`, `stdcpp`  
 Specifies what type of target to produce. Only targets that are installed correctly on your machine will be available.
-* **Run After Build** - *run*  
+- **Run After Build** - `run`  
 Executes the resulting output immediately after building it.
 
 Build options are formatted as comments inside your source code and do not have any meaning outside of this bundle.  They are written as:

@@ -61,7 +61,7 @@ Executes the resulting output immediately after building it.
 
 Build options are formatted as comments inside your source code and do not have any meaning outside of this bundle.  They are written as:
 
-   _' buildopt: option_
+   `' buildopt: option`
 
 where 'option' is the option you're enabling for the Build & Run commands.  The comments must be on their own lines with only whitespace preceeding them.
 

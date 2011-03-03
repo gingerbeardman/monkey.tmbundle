@@ -47,9 +47,9 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 	#scan for build options
 	TARGET='html5'
 	CONFIG='debug'
-	RUNAFTER='NO'
+	RUNAFTER='YES'
 	CLEANBUILD='NO'
-     UPDATE='NO'
+     UPDATE='YES'
 
 	for BUILDOPT in `grep -hiE -e "^[^\\w\\d]*'[^\\w\\d]*buildopt:[^\\d\\w]*\\w+" "$MNKY_COMPILE_PATH" | \
 		ruby -w -e "puts STDIN.read().downcase().gsub(/^\s*'\s*buildopt:\s*/,\"\").gsub(/\r?/, \"\")"` ;
@@ -143,14 +143,14 @@ exit_show_html</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
-	<string>@b</string>
+	<string>@r</string>
 	<key>name</key>
-	<string>Build</string>
+	<string>Update &amp; Run</string>
 	<key>output</key>
-	<string>showAsHTML</string>
+	<string>discard</string>
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>uuid</key>
-	<string>3146F9B6-03B6-429C-959D-2A8C405869DB</string>
+	<string>F11581F0-200D-468A-A4C6-8D145F900A94</string>
 </dict>
 </plist>

@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>'buildopt: ios</string>
+	<string>'buildopt: clean</string>
 	<key>name</key>
-	<string>Build as ios</string>
+	<string>Build clean</string>
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>tabTrigger</key>
-	<string>ios</string>
+	<string>clean</string>
 	<key>uuid</key>
-	<string>6C9A96D9-D8AB-4054-89B3-52457CABF375</string>
+	<string>684FB967-E00A-48B4-8D65-6868DB522B05</string>
 </dict>
 </plist>

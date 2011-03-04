@@ -79,12 +79,12 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 ## Changelog
 
 **2011-03-03**  
-- Fixed buildopts so that they work with CRLF/Windows line endings
-- Added Update & Run option, bound to Cmd+R
-- Renamed menu to Build as ios
-- Added clean buildopt
-- Added update buildopt
-- Rearranged menu
+- Fixed buildopts so that they work with CRLF/Windows line endings  
+- Added Update & Run option, bound to Cmd+R  
+- Renamed menu to 'Build as ios'  
+- Added clean buildopt  
+- Added update buildopt  
+- Rearranged menu  
 
 **2011-03-01**  
-- Initial public release
+- Initial public release  

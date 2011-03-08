@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>${1:x} = Clamp#( ${2:x#}, ${3:min#}, ${4:max#} )$5</string>
+	<key>name</key>
+	<string>Clamp</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>clamp</string>
+	<key>uuid</key>
+	<string>F63F3D84-7B2F-45E3-A47D-C463493EF5D7</string>
+</dict>
+</plist>

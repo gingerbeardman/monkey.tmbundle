@@ -79,6 +79,7 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 ## Changelog
 
 **2011-03-08**  
+- Added support for Clamp command  
 - Tweak to build window output  
 
 **2011-03-03**  

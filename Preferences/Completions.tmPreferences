@@ -24,6 +24,7 @@
 			<string>Case</string>
 			<string>Ceil</string>
 			<string>ChannelState</string>
+			<string>Clamp</string>
 			<string>Class</string>
 			<string>Clear</string>
 			<string>Cls</string>

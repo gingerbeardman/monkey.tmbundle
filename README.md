@@ -78,6 +78,9 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 
 ## Changelog
 
+**2011-03-08**  
+- Tweak to build output window  
+
 **2011-03-03**  
 - Fixed buildopts so that they work with CRLF/Windows line endings  
 - Added Update & Run option, bound to Cmd+R  

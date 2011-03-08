@@ -116,7 +116,7 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 
 	if [[ "$RUNAFTER" == "YES" ]] ; then
 		BUILDOPTS="$BUILDOPTS -run"
-		echo "&lt;li&gt;Run&lt;/li&gt;"
+		echo "&lt;li&gt;run&lt;/li&gt;"
 	fi
 
 	BUILDOPTS="$BUILDOPTS -config=$CONFIG"
@@ -129,7 +129,7 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 		echo "&lt;h3&gt;Command&lt;/h3&gt;"
 		echo "&lt;pre&gt;$ trans_macos$BUILDOPTS \"$MNKY_COMPILE_PATH\"&lt;/pre&gt;"
 
-		echo "&lt;h3&gt;Output&lt;/h3&gt;"
+		echo "&lt;h3&gt;Output...&lt;/h3&gt;"
 		echo "&lt;pre&gt;"
 		$TRANS $BUILDOPTS "$MNKY_COMPILE_PATH" 2&gt;&amp;1
 		echo "&lt;/pre&gt;"

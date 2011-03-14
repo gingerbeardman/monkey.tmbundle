@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Method New($1)
-	$2
+	<string>Method ${1:Name}($2)
+	$3
 End
-$3</string>
+$4</string>
 	<key>name</key>
 	<string>Method</string>
 	<key>scope</key>

@@ -78,6 +78,10 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 
 ## Changelog
 
+**2011-03-14**  
+- Added OnSuspend/OnResume to template app  
+- Small tweaks to tab order in some snippets  
+
 **2011-03-08**  
 - Added support for Clamp command  
 - Tweak to build window output  

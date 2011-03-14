@@ -15,21 +15,31 @@ Import mojo.graphics
 
 Class MyGame Extends App
 	Field counter = 0
-
+	
 	Method OnCreate()
 		' Startup code goes here
 		SetUpdateRate 60
 	End
-
+	
 	Method OnUpdate()
 		' Game code goes here
 		counter = (counter + 1) Mod 60
 	End
-
+	
 	Method OnRender()
 		' Drawing code goes here
 		Cls 96,96,96
 		DrawText "Hello World! " + counter, 0,0
+	End
+	
+	Method OnSuspend()
+		' Pause game, save state, etc.
+		paused = true
+	End
+	
+	Method OnResume()
+		' Allow user to resume game in their own time
+		paused = false
 	End
 End
 

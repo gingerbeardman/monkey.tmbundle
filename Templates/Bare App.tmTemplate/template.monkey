@@ -15,6 +15,7 @@ Import mojo.graphics
 
 Class MyGame Extends App
 	Field counter = 0
+	Field paused = false
 	
 	Method OnCreate()
 		' Startup code goes here

@@ -83,6 +83,7 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 - Fixed missing variable declaration in template app  
 - Added references to ⌘R and F13 in readme  
 - Added github tag for automatic download generation  
+- Update & Run (⌘R) now outputs build status to tool tip  
 
 **2011-03-14**  
 - Added OnSuspend/OnResume to template app  

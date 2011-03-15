@@ -31,9 +31,6 @@ else
 	MNKY_COMPILE_PATH=$TM_FILEPATH
 fi
 
-. "$TM_SUPPORT_PATH/lib/webpreview.sh"
-html_header "Build monkey" "$MNKY_COMPILE_PATH"
-
 # fail if the path is not set
 if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 
@@ -94,52 +91,31 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 		esac
 	done
 
-	echo "&lt;h3&gt;Options&lt;/h3&gt;"
-	echo "&lt;ul&gt;"
-	echo "&lt;li&gt;$TARGET&lt;/li&gt;"
-
-	if [[ "$CONFIG" == "debug" ]] ; then
-		echo "&lt;li&gt;debug&lt;/li&gt;"
-	else
-		echo "&lt;li&gt;release&lt;/li&gt;"
-	fi
-
 	if [[ "$CLEANBUILD" == "YES" ]] ; then
 		BUILDOPTS="$BUILDOPTS -clean"
-		echo "&lt;li&gt;clean&lt;/li&gt;"
 	fi
 
 	if [[ "$UPDATE" == "YES" ]] ; then
 		BUILDOPTS="$BUILDOPTS -update"
-		echo "&lt;li&gt;update&lt;/li&gt;"
 	fi
 
 	if [[ "$RUNAFTER" == "YES" ]] ; then
 		BUILDOPTS="$BUILDOPTS -run"
-		echo "&lt;li&gt;run&lt;/li&gt;"
 	fi
 
 	BUILDOPTS="$BUILDOPTS -config=$CONFIG"
 	BUILDOPTS="$BUILDOPTS -target=$TARGET"
 
-	echo "&lt;/ul&gt;"
-
 	# build/fail?
 	if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
-		echo "&lt;h3&gt;Command&lt;/h3&gt;"
-		echo "&lt;pre&gt;$ trans_macos$BUILDOPTS \"$MNKY_COMPILE_PATH\"&lt;/pre&gt;"
-
-		echo "&lt;h3&gt;Output...&lt;/h3&gt;"
-		echo "&lt;pre&gt;"
-		$TRANS $BUILDOPTS "$MNKY_COMPILE_PATH" 2&gt;&amp;1
-		echo "&lt;/pre&gt;"
+		$TRANS $BUILDOPTS "$MNKY_COMPILE_PATH" 2&gt;&amp;1 | grep "BUILD" | tail -1
 	fi
 
 else
 	pre "Build failed"
 fi
 
-exit_show_html</string>
+exit_show_tool_tip</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
@@ -147,7 +123,7 @@ exit_show_html</string>
 	<key>name</key>
 	<string>Update &amp; Run</string>
 	<key>output</key>
-	<string>discard</string>
+	<string>showAsTooltip</string>
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>uuid</key>

@@ -81,7 +81,8 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 
 **2011-03-15**  
 - Fixed missing variable declaration in template app  
-- Added references to ⌘R and F13 in readme
+- Added references to ⌘R and F13 in readme  
+- Added github tag for automatic download generation  
 
 **2011-03-14**  
 - Added OnSuspend/OnResume to template app  

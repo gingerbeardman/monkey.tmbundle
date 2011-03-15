@@ -10,21 +10,22 @@ This bundle lets you to use the Mac OS X editor TextMate as an IDE for the monke
 Press the Escape key to cycle through all matches after typing part of a keyword
 
 **Expand Keywords into Code**  
-Press the tab key to expand one keyword into one or more lines of code, subsequent presses of tab intelligently jump you through the resulting code allowing you to fill in multiple parameters with minimal key strokes
+Press the Tab key to expand one keyword into one or more lines of code, subsequent presses of tab intelligently jump you through the resulting code allowing you to fill in multiple parameters with minimal key strokes
 
 **Build options**  
 Specify target, config and run options in the source - no need for the command line
 
-**Build hotkey**  
-Quick and easy build by pressing Command+B
+**Build/Run hotkeys**  
+Quick and easy full build by pressing ⌘B, or a quicker update and run using ⌘R
 
 **Context Sensitive Help**  
-View the monkey module docs in a popup window
+View the monkey module docs in a popup window by pressing F13
 
 **Quick Start Template**  
 One click skeleton template to get you started, build to see instant results
 
-**Syntax Colouring**, **Code Folding** ...and more!
+**Syntax Colouring**, **Code Folding**, **Configurable Shortcut Keys**  
+...and more!
 
 ## Installation
 
@@ -77,6 +78,10 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 - monkey [http://www.monkeycoder.co.nz](http://www.monkeycoder.co.nz)
 
 ## Changelog
+
+**2011-03-15**  
+- Fixed missing variable declaration in template app  
+- Added references to ⌘R and F13 in readme
 
 **2011-03-14**  
 - Added OnSuspend/OnResume to template app  

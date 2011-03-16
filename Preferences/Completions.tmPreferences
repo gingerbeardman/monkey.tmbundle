@@ -109,6 +109,8 @@
 			<string>OnCreate</string>
 			<string>OnLoading</string>
 			<string>OnRender</string>
+			<string>OnResume</string>
+			<string>OnSuspend</string>
 			<string>OnUpdate</string>
 			<string>PlaySound</string>
 			<string>PopMatrix</string>

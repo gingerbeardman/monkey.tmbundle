@@ -79,6 +79,10 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 
 ## Changelog
 
+**2011-03-16**  
+- Added folding capability for #Rem...#End  
+- Reworked block code commenting: ⌘/ uses ' and ⌘? (⇧⌘/) uses #Rem...#End  
+
 **2011-03-15**  
 - Fixed missing variable declaration in template app  
 - Added references to ⌘R and F13 in readme  

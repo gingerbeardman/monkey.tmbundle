@@ -9,15 +9,15 @@
 	<key>foldingStartMarker</key>
 	<string>(?xi)
 	^\s*(
-		(?&lt;!end|end\s)(function|class|method|select|while|extern|if|rem) |
-		for | repeat | '\#region
+		(?&lt;!end|end\s)(function|class|method|select|while|extern|if) |
+		\#rem | for | repeat | '\#region
 	)\b</string>
 	<key>foldingStopMarker</key>
 	<string>(?xi)
 	^\s*(
 	# end &lt;keyword&gt;
-		end\s*(function|class|method|select|while|extern|if|rem) |
-		wend | until | forever | next | end | '\#end\s?region
+		end\s*(function|class|method|select|while|extern|if) |
+		\#end | wend | until | forever | next | end | '\#end\s?region
 	)\b</string>
 	<key>name</key>
 	<string>monkey</string>
@@ -1065,7 +1065,7 @@
 		<key>mnky_commands</key>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(A(bstract|Cos|rray|Sin|Tan|Tan2|bs|ccel(X|Y|Z)|dd(First|Last)|pp|rray)|Bool|C(ase|eil|hannelState|l(amp|s)|onst|ont(ains|inue)|o(py|s|unt)|lear)|D(e(fault|fault(Flags)|vice(Height|Width))|raw(Circle|Ellipse|Image|ImageRect|Line|Oval|Rect|Text))|E(achin|xt(ends|ern)|nd|ndsWith|rror|xit)|F(alse|i(eld|nd|ndLast|rst)|loat(Map)|loor|or(ever)|rames|romChar)|G(et|et(Alpha|Blend|Char|Color|Font|Matrix|Scissor)|lobal|rabImage)|H(andle(X|Y)|eight)|I(m(age|p(lements|ort))|n(clude|line|t(erface|Map))|sEmpty)|Jo(in|y(Down|Hit))|Key|Key(Down|Hit|s)|L(ast|ength|ist|o(g|ad(Image|Sound|State|String)|cal))|M(ap|ax|ethod|i(lliSecs|n)|o(d(ule)|use(Down|Hit|X|Y))|in)|N(ative|e(w|xt)|o(de)|ull)|O(bject(Enumerator)|n(Create|Loading|Render|Update))|P(laySound|o(pMatrix|w)|r(i(nt|vate)|operty)|u(blic|shMatrix))|R(e(move|move(Each|First|Last)|p(eat|lace)|turn)|nd|otate)|S(aveState|cale|e(ed|lect|lf|t(Alpha|Blend|Channel(Pan|Rate|Volume)|Color|Font|Handle|Image|List|Matrix|Scissor|UpdateRate))|gn|h(l|r)|in|ound|plit|qrt|t(artsWith|ep|opChannel|ri(ct|ng(Map)))|uper)|T(an|hen|o(Lower|Upper|uch(Down|Hit|X|Y))|r(ans(form|late)|im|ue))|Until|V(alue|alue(ForKey|s)|oid)|Width)\b</string>
+			<string>(?i)\b(A(bstract|Cos|rray|Sin|Tan|Tan2|bs|ccel(X|Y|Z)|dd(First|Last)|pp|rray)|Bool|C(ase|eil|hannelState|l(amp|s)|onst|ont(ains|inue)|o(py|s|unt)|lear)|D(e(fault|fault(Flags)|vice(Height|Width))|raw(Circle|Ellipse|Image|ImageRect|Line|Oval|Rect|Text))|E(achin|xt(ends|ern)|nd|ndsWith|rror|xit)|F(alse|i(eld|nd|ndLast|rst)|loat(Map)|loor|or(ever)|rames|romChar)|G(et|et(Alpha|Blend|Char|Color|Font|Matrix|Scissor)|lobal|rabImage)|H(andle(X|Y)|eight)|I(m(age|p(lements|ort))|n(clude|line|t(erface|Map))|sEmpty)|Jo(in|y(Down|Hit))|Key|Key(Down|Hit|s)|L(ast|ength|ist|o(g|ad(Image|Sound|State|String)|cal))|M(ap|ax|ethod|i(lliSecs|n)|o(d(ule)|use(Down|Hit|X|Y))|in)|N(ative|e(w|xt)|o(de)|ull)|O(bject(Enumerator)|n(Create|Loading|Render|Resume|Suspend|Update))|P(laySound|o(pMatrix|w)|r(i(nt|vate)|operty)|u(blic|shMatrix))|R(e(move|move(Each|First|Last)|p(eat|lace)|turn)|nd|otate)|S(aveState|cale|e(ed|lect|lf|t(Alpha|Blend|Channel(Pan|Rate|Volume)|Color|Font|Handle|Image|List|Matrix|Scissor|UpdateRate))|gn|h(l|r)|in|ound|plit|qrt|t(artsWith|ep|opChannel|ri(ct|ng(Map)))|uper)|T(an|hen|o(Lower|Upper|uch(Down|Hit|X|Y))|r(ans(form|late)|im|ue))|Until|V(alue|alue(ForKey|s)|oid)|Width)\b</string>
 			<key>name</key>
 			<string>keyword.other.commands.monkey</string>
 		</dict>

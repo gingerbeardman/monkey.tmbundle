@@ -7,7 +7,7 @@
 $TM_SELECTED_TEXT#End
 </string>
 	<key>keyEquivalent</key>
-	<string>@/</string>
+	<string>@?</string>
 	<key>name</key>
 	<string>Block comment code</string>
 	<key>scope</key>

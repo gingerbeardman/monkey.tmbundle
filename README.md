@@ -1,7 +1,7 @@
 monkey.tmbundle
 ===============
 
-This bundle lets you to use the Mac OS X editor TextMate as an IDE for the monkey programming language. It is based in part on the existing [blitzmax.bundle](https://github.com/nilium/blitzmax.tmbundle) so thanks to Nilium for that.
+This bundle lets you to use the Mac OS X editor TextMate as an IDE for the [monkey programming language](http://www.monkeycoder.co.nz). It is based in part on the existing [blitzmax.bundle](https://github.com/nilium/blitzmax.tmbundle) so thanks to Nilium for that.
 
 
 ## Features
@@ -82,7 +82,6 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 **2011-03-15**  
 - Fixed missing variable declaration in template app  
 - Added references to ⌘R and F13 in readme  
-- Added github tag for automatic download generation  
 - Update & Run (⌘R) now outputs build status to tool tip  
 
 **2011-03-14**  

@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Global ${1:name} = ${2:value}$3</string>
+	<string>Local ${1:name} = ${2:value}$3</string>
 	<key>name</key>
-	<string>Global</string>
+	<string>Local</string>
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>tabTrigger</key>
-	<string>global</string>
+	<string>local</string>
 	<key>uuid</key>
-	<string>548E8361-53ED-4585-B531-B63B0FEF554C</string>
+	<string>1D3B03BC-17A9-4EF8-83B9-7647CFBF8A22</string>
 </dict>
 </plist>

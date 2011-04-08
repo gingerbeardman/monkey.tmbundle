@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>#Rem
-$TM_SELECTED_TEXT#End
-</string>
-	<key>keyEquivalent</key>
-	<string>@?</string>
+	<string>Const ${1:NAME} = ${2:value}$3</string>
 	<key>name</key>
-	<string>Block comment code</string>
+	<string>Const</string>
 	<key>scope</key>
 	<string>source.monkey</string>
+	<key>tabTrigger</key>
+	<string>const</string>
 	<key>uuid</key>
-	<string>24EE95A2-B633-474F-B0D3-34E4BA3D193A</string>
+	<string>27532B53-5D68-4AEB-9E2E-F29657745890</string>
 </dict>
 </plist>

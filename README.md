@@ -79,6 +79,22 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 
 ## Changelog
 
+**TO DO**  
+- monkey.tmtheme to cater for all monkey.tmbundle scopes  
+reserved words
+modules and self-defined keywords such as globals, class names, both of current code, or imported modules
+string literals = green
+numbers, operators and comments
+
+
+**2011-03-31**  
+- Added Const and Local snippets and scope  
+- Changed Global snippet  
+- Scope changes to allow for better syntax highlighting of variable names and more  
+- Tweaked Commands regex in language definition  
+- Removed Block comment, now uses default TextMate behaviour  
+- Added Backwards to completions  
+
 **2011-03-16**  
 - Added folding capability for #Rem...#End  
 - Reworked block code commenting: ⌘/ uses ' and ⌘? (⇧⌘/) uses #Rem...#End  

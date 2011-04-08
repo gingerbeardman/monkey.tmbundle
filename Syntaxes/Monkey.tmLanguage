@@ -102,7 +102,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.extern.monkey</string>
+			<string>extern.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -147,6 +147,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#mnky_local_variable</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#mnky_constant</string>
 				</dict>
 				<dict>
@@ -174,7 +178,26 @@
 					<key>match</key>
 					<string>(?i)(?:(?:^|;)\s*)(function)\s+([a-zA-Z_]\w*)\b</string>
 					<key>name</key>
-					<string>meta.function.extern.monkey</string>
+					<string>function.extern.monkey</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.method.extern.monkey</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.method.extern.monkey</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(?i)(?:(?:^|;)\s*)(method)\s+([a-zA-Z_]\w*)\b</string>
+					<key>name</key>
+					<string>method.extern.monkey</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -203,7 +226,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?i)\b(end)\b</string>
+					<string>(?i)\b(end\s?class)\b</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -213,28 +236,9 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.type.extern.monkey</string>
+					<string>type.extern.monkey</string>
 					<key>patterns</key>
 					<array>
-						<dict>
-							<key>captures</key>
-							<dict>
-								<key>1</key>
-								<dict>
-									<key>name</key>
-									<string>storage.type.method.method.extern.monkey</string>
-								</dict>
-								<key>2</key>
-								<dict>
-									<key>name</key>
-									<string>entity.name.function.method.extern.monkey</string>
-								</dict>
-							</dict>
-							<key>match</key>
-							<string>(?i)(?:(?:^|;)\s*)(method)\s+([a-zA-Z_]\w*)\b</string>
-							<key>name</key>
-							<string>meta.method.monkey</string>
-						</dict>
 						<dict>
 							<key>include</key>
 							<string>#mnky_comment_quote</string>
@@ -273,7 +277,7 @@
 						</dict>
 						<dict>
 							<key>include</key>
-							<string>#mnky_type_field</string>
+							<string>#mnky_field</string>
 						</dict>
 						<dict>
 							<key>include</key>
@@ -292,6 +296,10 @@
 			<string>#mnky_function</string>
 		</dict>
 		<dict>
+			<key>include</key>
+			<string>#mnky_method</string>
+		</dict>
+		<dict>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -308,7 +316,7 @@
 			<key>match</key>
 			<string>(?i)\b(import)\s+((?:[a-zA-Z_]\w*\.?)+)</string>
 			<key>name</key>
-			<string>meta.import.module.monkey</string>
+			<string>import.module.monkey</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -349,7 +357,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.import.file.monkey</string>
+			<string>import.file.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -375,7 +383,7 @@
 			<key>match</key>
 			<string>(?i)\b(framework)\s+((?:[a-zA-Z_]\w*\.?)+)</string>
 			<key>name</key>
-			<string>meta.framework.monkey</string>
+			<string>framework.monkey</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -394,7 +402,7 @@
 			<key>match</key>
 			<string>(?i)\b(module)\s+(([a-zA-Z_]\w*\.?)+)</string>
 			<key>name</key>
-			<string>meta.module.monkey</string>
+			<string>module.monkey</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -435,7 +443,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.include.monkey</string>
+			<string>include.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -483,7 +491,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.incbin.monkey</string>
+			<string>incbin.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -531,7 +539,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.moduleinfo.monkey</string>
+			<string>moduleinfo.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -572,7 +580,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?i)\b(end)\b</string>
+			<string>(?i)\b(end\s?class)\b</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -582,56 +590,9 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.type.monkey</string>
+			<string>type.monkey</string>
 			<key>patterns</key>
 			<array>
-				<dict>
-					<key>begin</key>
-					<string>(?i)(?:(?:^|;)\s*)(method)\s+([a-zA-Z_]\w*)</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>storage.type.method.monkey</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function.method.monkey</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>(?i)(?:\)\s+(abstract)\s*)$|\b(end)\b</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>storage.modifier.abstract.monkey</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>storage.type.method.monkey</string>
-						</dict>
-					</dict>
-					<key>name</key>
-					<string>meta.method.monkey</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>$self</string>
-						</dict>
-						<dict>
-							<key>match</key>
-							<string>(?i)\bfinal\b</string>
-							<key>name</key>
-							<string>storage.modifier.method.final.monkey</string>
-						</dict>
-					</array>
-				</dict>
 				<dict>
 					<key>include</key>
 					<string>#mnky_comment_quote</string>
@@ -674,6 +635,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#mnky_local_variable</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#mnky_constant</string>
 				</dict>
 				<dict>
@@ -682,7 +647,11 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#mnky_type_field</string>
+					<string>#mnky_method</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#mnky_field</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -726,7 +695,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.control.while.monkey</string>
+			<string>control.while.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -757,7 +726,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.control.for.monkey</string>
+			<string>control.for.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -812,7 +781,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.control.repeat.monkey</string>
+			<string>control.repeat.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -833,7 +802,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?i)(?:(?:^|;)\s*)(end)\b</string>
+			<string>(?i)(?:(?:^|;)\s*)(end\s?select)\b</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -843,7 +812,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.control.select.monkey</string>
+			<string>control.select.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -858,7 +827,7 @@
 					<key>match</key>
 					<string>(?i)(?:(?:^|;)\s*)(case)\b</string>
 					<key>name</key>
-					<string>meta.control.select.case.monkey</string>
+					<string>control.select.case.monkey</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -872,7 +841,7 @@
 					<key>match</key>
 					<string>(?i)(?:(?:^|;)\s*)(default)\b</string>
 					<key>name</key>
-					<string>meta.control.select.default.monkey</string>
+					<string>control.select.default.monkey</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -882,7 +851,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(mod|shr|shl|sar|and|or|not)\b</string>
+			<string>(?i)\b(mod|shr|shl|and|or|not)\b</string>
 			<key>name</key>
 			<string>keyword.operator.monkey</string>
 		</dict>
@@ -970,7 +939,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.array.monkey</string>
+			<string>array.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1002,7 +971,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.attributes.monkey</string>
+			<string>attributes.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1019,7 +988,7 @@
 					<key>end</key>
 					<string>(?=\s|\}|[a-zA-Z_])</string>
 					<key>name</key>
-					<string>meta.attribute.monkey</string>
+					<string>attribute.monkey</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -1044,7 +1013,7 @@
 					<key>match</key>
 					<string>\b([a-zA-Z_]\w*)(?:\s*((?!=)|(?=\})))</string>
 					<key>name</key>
-					<string>meta.attribute.monkey</string>
+					<string>attribute.monkey</string>
 				</dict>
 			</array>
 		</dict>
@@ -1065,7 +1034,7 @@
 		<key>mnky_commands</key>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(A(bstract|Cos|rray|Sin|Tan|Tan2|bs|ccel(X|Y|Z)|dd(First|Last)|pp|rray)|Bool|C(ase|eil|hannelState|l(amp|s)|onst|ont(ains|inue)|o(py|s|unt)|lear)|D(e(fault|fault(Flags)|vice(Height|Width))|raw(Circle|Ellipse|Image|ImageRect|Line|Oval|Rect|Text))|E(achin|xt(ends|ern)|nd|ndsWith|rror|xit)|F(alse|i(eld|nd|ndLast|rst)|loat(Map)|loor|or(ever)|rames|romChar)|G(et|et(Alpha|Blend|Char|Color|Font|Matrix|Scissor)|lobal|rabImage)|H(andle(X|Y)|eight)|I(m(age|p(lements|ort))|n(clude|line|t(erface|Map))|sEmpty)|Jo(in|y(Down|Hit))|Key|Key(Down|Hit|s)|L(ast|ength|ist|o(g|ad(Image|Sound|State|String)|cal))|M(ap|ax|ethod|i(lliSecs|n)|o(d(ule)|use(Down|Hit|X|Y))|in)|N(ative|e(w|xt)|o(de)|ull)|O(bject(Enumerator)|n(Create|Loading|Render|Resume|Suspend|Update))|P(laySound|o(pMatrix|w)|r(i(nt|vate)|operty)|u(blic|shMatrix))|R(e(move|move(Each|First|Last)|p(eat|lace)|turn)|nd|otate)|S(aveState|cale|e(ed|lect|lf|t(Alpha|Blend|Channel(Pan|Rate|Volume)|Color|Font|Handle|Image|List|Matrix|Scissor|UpdateRate))|gn|h(l|r)|in|ound|plit|qrt|t(artsWith|ep|opChannel|ri(ct|ng(Map)))|uper)|T(an|hen|o(Lower|Upper|uch(Down|Hit|X|Y))|r(ans(form|late)|im|ue))|Until|V(alue|alue(ForKey|s)|oid)|Width)\b</string>
+			<string>(?i)\b(A(bstract|Cos|Sin|Tan|Tan2|bs|ccel(X|Y|Z)|dd(First|Last)|pp|rray)|B(ackwards|ool)|C(ase|eil|hannelState|l(amp|s)|onst|ont(ains|inue)|o(py|s|unt)|lear)|D(e(fault|fault(Flags)|vice(Height|Width))|raw(Circle|Ellipse|Image|ImageRect|Line|Oval|Rect|Text))|E(achin|xt(ends|ern)|nd|ndsWith|rror|xit)|F(alse|i(eld|nd|ndLast|rst)|loat(Map)|loor|or(ever)|rames|romChar)|G(et|et(Alpha|Blend|Char|Color|Font|Matrix|Scissor)|lobal|rabImage)|H(andle(X|Y)|eight)|I(m(age|p(lements|ort))|n(clude|line|t(erface|Map))|sEmpty)|Jo(in|y(Down|Hit))|Key|Key(Down|Hit|s)|L(ast|ength|ist|o(g|ad(Image|Sound|State|String)|cal))|M(ap|ax|ethod|i(llisecs|n)|o(d(ule)|use(Down|Hit|X|Y))|in)|N(ative|e(w|xt)|o(de)|ull)|O(bject(Enumerator)|n(Create|Loading|Render|Resume|Suspend|Update))|P(laySound|o(pMatrix|w)|r(i(nt|vate)|operty)|u(blic|shMatrix))|R(e(move|move(Each|First|Last)|p(eat|lace)|turn)|nd|otate)|S(aveState|cale|e(ed|lect|lf|t(Alpha|Blend|Channel(Pan|Rate|Volume)|Color|Font|Handle|Image|List|Matrix|Scissor|UpdateRate))|gn|h(l|r)|in|ound|plit|qrt|t(artsWith|ep|opChannel|ri(ct|ng(Map)))|uper)|T(an|hen|o(Lower|Upper|uch(Down|Hit|X|Y))|r(ans(form|late)|im|ue))|Until|V(alue|alue(ForKey|s)|oid)|Width)\b</string>
 			<key>name</key>
 			<string>keyword.other.commands.monkey</string>
 		</dict>
@@ -1108,16 +1077,23 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.other.constant.monkey</string>
+					<string>keyword.other.new.monkey</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.monkey</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?i)\b(const)\b</string>
+			<string>(?i)\b(const)\s+([a-zA-Z_]\w*)\b</string>
 			<key>name</key>
-			<string>meta.constant.monkey</string>
+			<string>constant.monkey</string>
 		</dict>
 		<key>mnky_constants</key>
 		<dict>
+			<key>name</key>
+			<string>constants.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1168,7 +1144,7 @@
 			<key>match</key>
 			<string>(?i)\b(new)\s+([a-zA-Z_]\w*)\b</string>
 			<key>name</key>
-			<string>meta.call.constructor.monkey</string>
+			<string>call.constructor.monkey</string>
 		</dict>
 		<key>mnky_control_keywords</key>
 		<dict>
@@ -1176,6 +1152,21 @@
 			<string>(?i)\b(throw|return|exit|continue)\b</string>
 			<key>name</key>
 			<string>keyword.control.monkey</string>
+		</dict>
+		<key>mnky_field</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.variable.field.monkey</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)\b(field)\s+([a-zA-Z_]\w*)+\b</string>
+			<key>name</key>
+			<string>variable.field.monkey</string>
 		</dict>
 		<key>mnky_function</key>
 		<dict>
@@ -1195,7 +1186,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?i)\b(end)\b</string>
+			<string>(?i)\b(end\s?function)\b</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1205,7 +1196,7 @@
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.function.monkey</string>
+			<string>function.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1225,9 +1216,9 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?i)\b(global)\b</string>
+			<string>(?i)\b(global)\s+([a-zA-Z_]\w*)\b</string>
 			<key>name</key>
-			<string>meta.variable.monkey</string>
+			<string>variable.monkey</string>
 		</dict>
 		<key>mnky_joy</key>
 		<dict>
@@ -1254,9 +1245,46 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(?i)\b(local)\b</string>
+			<string>(?i)\b(local)\s+([a-zA-Z_]\w*)\b</string>
 			<key>name</key>
-			<string>meta.variable.monkey</string>
+			<string>variable.monkey</string>
+		</dict>
+		<key>mnky_method</key>
+		<dict>
+			<key>begin</key>
+			<string>(?i)(?:(?:^|;)\s*)(method)\s+([a-zA-Z_]\w*)\b</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.method.monkey</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.method.monkey</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?i)\b(end\s?method)\b</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.method.monkey</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>method.monkey</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
 		</dict>
 		<key>mnky_mouse</key>
 		<dict>
@@ -1330,7 +1358,7 @@
 			<key>match</key>
 			<string>(?i)\b(?:(ptr|var)|(varptr))\b</string>
 			<key>name</key>
-			<string>meta.pointerops.monkey</string>
+			<string>pointerops.monkey</string>
 		</dict>
 		<key>mnky_preprocessor</key>
 		<dict>
@@ -1387,21 +1415,6 @@
 				</dict>
 			</array>
 		</dict>
-		<key>mnky_type_field</key>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.variable.field.monkey</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(?i)\b(field)\b</string>
-			<key>name</key>
-			<string>meta.variable.field.monkey</string>
-		</dict>
 		<key>mnky_typename</key>
 		<dict>
 			<key>captures</key>
@@ -1420,7 +1433,7 @@
 			<key>match</key>
 			<string>(?xi)(?: \: \s* ([a-zA-Z_]\w*) | ([!#%]|@{1,2}|\$[zw]?) )</string>
 			<key>name</key>
-			<string>meta.typename.monkey</string>
+			<string>typename.monkey</string>
 		</dict>
 		<key>mnky_types</key>
 		<dict>
@@ -1434,7 +1447,7 @@
 			<key>match</key>
 			<string>[a-zA-Z_]\w*://[^ "'()\[\]]*(?=$|\b)</string>
 			<key>name</key>
-			<string>meta.url.monkey</string>
+			<string>url.monkey</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>

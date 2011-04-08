@@ -19,9 +19,13 @@ This variable allows you to build your applications (⌘B). Documentation and tr
 
 # Using Projects
 
-When using projects, you can set the TM\_MONKEY\_MAIN\_FILE shell variable for your project and specify the main _monkey_ file to build when you use the Build App (⌘B) command.
+When using projects, you can set the TM\_MONKEY\_MAIN\_FILE shell variable for your project and specify the main _monkey_ file to build when you use the Build (⌘B) command.
 
 To set this variable, open the project drawer and deselect any files, then click the "i" button at the bottom of the drawer to open the project info.  Add the TM\_MONKEY\_MAIN\_FILE variable, and set its value to the file relative to the main file project's directory.
+
+# Update &amp; Run
+
+You can use the Update &amp; Run (⌘R) command to do a partial build that should not disturb any changes you've made to the translated/target source code. Afterwards a small tooltip with the build result is displayed, rather than the popup window containing a verbose summary of the whole build process.
 
 # Build Options
 
@@ -38,13 +42,14 @@ Build options are formatted as comments inside your source code and do not have 
 
    _' buildopt: option_
 
-where 'option' is the option you're enabling for the Build &amp; Run commands.  The comments must be on their own lines with only whitespace preceeding them.</string>
+where 'option' is the option you're enabling for the Build &amp; Run commands.  The comments must be on their own lines with only whitespace preceeding them.
+</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
 	<string>^h</string>
 	<key>name</key>
-	<string>Help (2011-03-16)</string>
+	<string>Help (2011-03-31)</string>
 	<key>output</key>
 	<string>showAsHTML</string>
 	<key>scope</key>

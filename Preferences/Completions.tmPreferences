@@ -21,6 +21,8 @@
 			<string>AddLast</string>
 			<string>App</string>
 			<string>Array</string>
+			<string>Backwards</string>
+			<string>Bool</string>
 			<string>Case</string>
 			<string>Ceil</string>
 			<string>ChannelState</string>
@@ -28,6 +30,7 @@
 			<string>Class</string>
 			<string>Clear</string>
 			<string>Cls</string>
+			<string>Const</string>
 			<string>Contains</string>
 			<string>Copy</string>
 			<string>Cos</string>
@@ -77,6 +80,7 @@
 			<string>If</string>
 			<string>Image</string>
 			<string>Import</string>
+			<string>Int</string>
 			<string>IntMap</string>
 			<string>IsEmpty</string>
 			<string>Join</string>
@@ -93,6 +97,7 @@
 			<string>LoadSound</string>
 			<string>LoadState</string>
 			<string>LoadString</string>
+			<string>Local</string>
 			<string>Map</string>
 			<string>Max</string>
 			<string>Method</string>

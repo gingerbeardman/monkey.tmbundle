@@ -77,15 +77,21 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 - TextMate [http://macromates.com](http://macromates.com)
 - monkey [http://www.monkeycoder.co.nz](http://www.monkeycoder.co.nz)
 
+## Known issues
+Single line if statements can result in syntax colouring errors.
+
 ## Changelog
 
 **TO DO**  
-- monkey.tmtheme to cater for all monkey.tmbundle scopes  
-reserved words
-modules and self-defined keywords such as globals, class names, both of current code, or imported modules
-string literals = green
-numbers, operators and comments
+- Reserved words  
+- Modules and self-defined keywords such as globals, class names, both of current code, or imported modules  
+- String literals  
+- Numbers, operators and comments  
 
+
+**2011-05-19**  
+- General cleaning up of scope endings for better syntax colouring  
+- Added support for Compare keyword  
 
 **2011-03-31**  
 - Added Const and Local snippets and scope  

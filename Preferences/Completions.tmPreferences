@@ -30,6 +30,7 @@
 			<string>Class</string>
 			<string>Clear</string>
 			<string>Cls</string>
+			<string>Compare</string>
 			<string>Const</string>
 			<string>Contains</string>
 			<string>Copy</string>
@@ -51,7 +52,12 @@
 			<string>ElseIf</string>
 			<string>#End</string>
 			<string>End</string>
-			<string>EndIf</string>
+			<string>End Class</string>
+			<string>End For</string>
+			<string>End Function</string>
+			<string>End If</string>
+			<string>End Method</string>
+			<string>End While</string>
 			<string>EndsWith</string>
 			<string>Error</string>
 			<string>Exit</string>

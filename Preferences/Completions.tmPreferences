@@ -61,6 +61,7 @@
 			<string>EndsWith</string>
 			<string>Error</string>
 			<string>Exit</string>
+			<string>Extern</string>
 			<string>Field</string>
 			<string>Find</string>
 			<string>FindLast</string>

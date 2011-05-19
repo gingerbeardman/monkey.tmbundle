@@ -9,14 +9,14 @@
 	<key>foldingStartMarker</key>
 	<string>(?xi)
 	^\s*(
-		(?&lt;!end|end\s)(function|class|method|select|while|extern|if) |
+		(?&lt;!end|end\s)(function|class|method|select|while|if) |
 		\#rem | for | repeat | '\#region
 	)\b</string>
 	<key>foldingStopMarker</key>
 	<string>(?xi)
 	^\s*(
 	# end &lt;keyword&gt;
-		end\s*(function|class|method|select|while|extern|if) |
+		end\s*(function|class|method|select|while|if) |
 		\#end | wend | until | forever | next | end | '\#end\s?region
 	)\b</string>
 	<key>name</key>
@@ -64,232 +64,6 @@
 		<dict>
 			<key>include</key>
 			<string>#mnky_commands</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>(?i)(?:(?:^|;)\s*)(extern)(?:\s+((")[^"]*("))|\b)</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.extern.monkey</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>string.quoted.double.monkey</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.monkey</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.monkey</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>(?i)(?:(?:^|;)\s*)\b(end)\b</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.extern.monkey</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>extern.monkey</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#mnky_comment_quote</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_comment_block</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_pointerops</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_constants</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_null</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_typename</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_types</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_array</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_string_quoted</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_global_variable</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_local_variable</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_constant</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_preprocessor</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_commands</string>
-				</dict>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>storage.type.function.extern.monkey</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function.extern.monkey</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(?i)(?:(?:^|;)\s*)(function)\s+([a-zA-Z_]\w*)\b</string>
-					<key>name</key>
-					<string>function.extern.monkey</string>
-				</dict>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>storage.type.method.extern.monkey</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.method.extern.monkey</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(?i)(?:(?:^|;)\s*)(method)\s+([a-zA-Z_]\w*)\b</string>
-					<key>name</key>
-					<string>method.extern.monkey</string>
-				</dict>
-				<dict>
-					<key>begin</key>
-					<string>(?i)(?:(?:^|;)\s*)(class)\s+([a-zA-Z_]\w*)(?:\s+(extends)\s+([a-zA-Z_]\w*))?</string>
-					<key>beginCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>storage.type.class.extern.monkey</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.type.extern.monkey</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>storage.modifier.extends.extern.monkey</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>entity.other.inherited-class.extern.monkey</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>(?i)\b(end\s?class)\b</string>
-					<key>endCaptures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>storage.type.class.extern.monkey</string>
-						</dict>
-					</dict>
-					<key>name</key>
-					<string>type.extern.monkey</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#mnky_comment_quote</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#mnky_comment_block</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#mnky_pointerops</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#mnky_string_quoted</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#mnky_constants</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#mnky_null</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#mnky_typename</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#mnky_types</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#mnky_array</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#mnky_field</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#mnky_preprocessor</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#mnky_commands</string>
-						</dict>
-					</array>
-				</dict>
-			</array>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -580,7 +354,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?i)\b(end\s?class)\b</string>
+			<string>(?i)\b(end(\s?class)?)\b</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -665,9 +439,9 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b((end\s?|else\s?)?(if)|else|then)\b</string>
+			<string>\s*\b(c(ase|ontinue)|do|e(lse(\s?if)?|nd(class|for(each)?|function|if|method|select|while)|xit)|for(\s?each)?|if|return|select|wend|while)\b</string>
 			<key>name</key>
-			<string>keyword.control.if.monkey</string>
+			<string>control.keywords.monkey</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -685,7 +459,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?i)(?:(?:^|;)\s*)(end\s?while|wend)\b</string>
+			<string>(?i)(?:(?:^|;)\s*)(end(\s?while)?|wend)\b</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -696,6 +470,37 @@
 			</dict>
 			<key>name</key>
 			<string>control.while.monkey</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(?i)(?:(?:^|;)\s*)(if|else)\b</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.if.monkey</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?i)(?:(?:^|;)\s*)(end(\s?if)?)\b</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.if.end.monkey</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>control.if.monkey</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -802,7 +607,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?i)(?:(?:^|;)\s*)(end\s?select)\b</string>
+			<string>(?i)(?:(?:^|;)\s*)(end(\s?select)?)\b</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1034,7 +839,7 @@
 		<key>mnky_commands</key>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(A(bstract|Cos|Sin|Tan|Tan2|bs|ccel(X|Y|Z)|dd(First|Last)|pp|rray)|B(ackwards|ool)|C(ase|eil|hannelState|l(amp|s)|onst|ont(ains|inue)|o(py|s|unt)|lear)|D(e(fault|fault(Flags)|vice(Height|Width))|raw(Circle|Ellipse|Image|ImageRect|Line|Oval|Rect|Text))|E(achin|xt(ends|ern)|nd|ndsWith|rror|xit)|F(alse|i(eld|nd|ndLast|rst)|loat(Map)|loor|or(ever)|rames|romChar)|G(et|et(Alpha|Blend|Char|Color|Font|Matrix|Scissor)|lobal|rabImage)|H(andle(X|Y)|eight)|I(m(age|p(lements|ort))|n(clude|line|t(erface|Map))|sEmpty)|Jo(in|y(Down|Hit))|Key|Key(Down|Hit|s)|L(ast|ength|ist|o(g|ad(Image|Sound|State|String)|cal))|M(ap|ax|ethod|i(llisecs|n)|o(d(ule)|use(Down|Hit|X|Y))|in)|N(ative|e(w|xt)|o(de)|ull)|O(bject(Enumerator)|n(Create|Loading|Render|Resume|Suspend|Update))|P(laySound|o(pMatrix|w)|r(i(nt|vate)|operty)|u(blic|shMatrix))|R(e(move|move(Each|First|Last)|p(eat|lace)|turn)|nd|otate)|S(aveState|cale|e(ed|lect|lf|t(Alpha|Blend|Channel(Pan|Rate|Volume)|Color|Font|Handle|Image|List|Matrix|Scissor|UpdateRate))|gn|h(l|r)|in|ound|plit|qrt|t(artsWith|ep|opChannel|ri(ct|ng(Map)))|uper)|T(an|hen|o(Lower|Upper|uch(Down|Hit|X|Y))|r(ans(form|late)|im|ue))|Until|V(alue|alue(ForKey|s)|oid)|Width)\b</string>
+			<string>(?i)\b(A(bstract|Cos|Sin|Tan|Tan2|bs|ccel(X|Y|Z)|dd(First|Last)|pp|rray)|B(ackwards|ool)|C(ase|eil|hannelState|l(amp|s)|o(mpare|nst|nt(ains|inue)|py|s|unt)|lear)|D(e(faultFlags|vice(Height|Width))|raw(Circle|Ellipse|Image|ImageRect|Line|Oval|Rect|Text))|E(achin|xt(ends|ern)|nd|ndsWith|rror|xit)|F(alse|i(eld|nd|ndLast|rst)|loat(Map)|loor|or(ever)|rames|romChar)|G(et|et(Alpha|Blend|Char|Color|Font|Matrix|Scissor)|lobal|rabImage)|H(andle(X|Y)|eight)|I(m(age|p(lements|ort))|n(clude|line|t(erface|Map))|sEmpty)|Jo(in|y(Down|Hit))|Key|Key(Down|Hit|s)|L(ast|ength|ist|o(g|ad(Image|Sound|State|String)|cal))|M(ap|ax|ethod|i(llisecs|n)|o(d(ule)|use(Down|Hit|X|Y))|in)|N(ative|e(w|xt)|o(de)|ull)|O(bject(Enumerator)|n(Create|Loading|Render|Resume|Suspend|Update))|P(laySound|o(pMatrix|w)|r(i(nt|vate)|operty)|u(blic|shMatrix))|R(e(move|move(Each|First|Last)|p(eat|lace)|turn)|nd|otate)|S(aveState|cale|e(ed|lect|lf|t(Alpha|Blend|Channel(Pan|Rate|Volume)|Color|Font|Handle|Image|List|Matrix|Scissor|UpdateRate))|gn|h(l|r)|in|ound|plit|qrt|t(artsWith|ep|opChannel|ri(ct|ng(Map)))|uper)|T(an|hen|o(Lower|Upper|uch(Down|Hit|X|Y))|r(ans(form|late)|im|ue))|Until|V(alue|alue(ForKey|s)|oid)|Width)\b</string>
 			<key>name</key>
 			<string>keyword.other.commands.monkey</string>
 		</dict>
@@ -1186,7 +991,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?i)\b(end\s?function)\b</string>
+			<string>(?i)\b(end(\s?function)?)\b</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1267,7 +1072,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?i)\b(end\s?method)\b</string>
+			<string>(?i)\b(end(\s?method)?)\b</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>

@@ -40,6 +40,7 @@
 			<string>DefaultFlags</string>
 			<string>DeviceHeight</string>
 			<string>DeviceWidth</string>
+			<string>Discard</string>
 			<string>DrawCircle</string>
 			<string>DrawEllipse</string>
 			<string>DrawImage</string>

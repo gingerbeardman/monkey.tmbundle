@@ -88,6 +88,8 @@ Single line if statements can result in syntax colouring errors.
 - String literals  
 - Numbers, operators and comments  
 
+**2011-05-31**  
+- Added support for Discard method (v40)  
 
 **2011-05-19**  
 - General cleaning up of scope endings for better syntax colouring  

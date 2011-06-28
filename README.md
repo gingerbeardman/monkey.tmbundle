@@ -88,6 +88,9 @@ Single line if statements can result in syntax colouring errors.
 - String literals  
 - Numbers, operators and comments  
 
+**2011-06-28**  
+- Added support for ⌥⎋ (Option+Escape) auto-completion menu  
+
 **2011-05-31**  
 - Added support for Discard method (v40)  
 

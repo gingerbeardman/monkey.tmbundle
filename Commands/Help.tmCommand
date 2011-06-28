@@ -49,7 +49,7 @@ where 'option' is the option you're enabling for the Build &amp; Run commands.  
 	<key>keyEquivalent</key>
 	<string>^h</string>
 	<key>name</key>
-	<string>Help (2011-05-31)</string>
+	<string>Help (2011-06-28)</string>
 	<key>output</key>
 	<string>showAsHTML</string>
 	<key>scope</key>

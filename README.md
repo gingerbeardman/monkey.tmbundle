@@ -7,7 +7,7 @@ This bundle lets you to use the Mac OS X editor [TextMate](http://macromates.com
 ## Features
 
 **Auto Completion of Keywords**  
-Press the Escape key to cycle through all matches after typing part of a keyword
+Press the Escape key to cycle through all matches after typing part of a keyword, Shift+Escape will take cycle backwards, Option+Escape will present a list of matches for you to choose from
 
 **Expand Keywords into Code**  
 Press the Tab key to expand one keyword into one or more lines of code, subsequent presses of tab intelligently jump you through the resulting code allowing you to fill in multiple parameters with minimal key strokes

@@ -9,18 +9,20 @@
 	<key>foldingStartMarker</key>
 	<string>(?xi)
 	^\s*(
-		(?&lt;!end|end\s)(function|class|method|select|while|if) |
+		(?&lt;!end|end\s)(function|class|method|select|while) |
 		\#rem | for | repeat | '\#region
 	)\b</string>
 	<key>foldingStopMarker</key>
 	<string>(?xi)
 	^\s*(
 	# end &lt;keyword&gt;
-		end\s*(function|class|method|select|while|if) |
-		\#end | wend | until | forever | next | end | '\#end\s?region
+		end\s?(function|class|method|select|while) |
+		\#end | '\#end\s?region
 	)\b</string>
+	<key>keyEquivalent</key>
+	<string>^~M</string>
 	<key>name</key>
-	<string>monkey</string>
+	<string>Monkey</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -52,10 +54,6 @@
 		<dict>
 			<key>include</key>
 			<string>#mnky_pointerops</string>
-		</dict>
-		<dict>
-			<key>include</key>
-			<string>#mnky_preprocessor</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -141,190 +139,8 @@
 			</array>
 		</dict>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.framework.monkey</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>string.unquoted.module.monkey</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(?i)\b(framework)\s+((?:[a-zA-Z_]\w*\.?)+)</string>
-			<key>name</key>
-			<string>framework.monkey</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.module.monkey</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>string.unquoted.module.monkey</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(?i)\b(module)\s+(([a-zA-Z_]\w*\.?)+)</string>
-			<key>name</key>
-			<string>module.monkey</string>
-		</dict>
-		<dict>
 			<key>begin</key>
-			<string>(?i)\b(include)\s+(("))</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.include.monkey</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.monkey</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>string.quoted.double.monkey</string>
-				</dict>
-			</dict>
-			<key>contentName</key>
-			<string>string.quoted.double.monkey</string>
-			<key>end</key>
-			<string>(")</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.monkey</string>
-				</dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>string.quoted.double.monkey</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>include.monkey</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#mnky_string_content</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>(?i)\b(incbin)\s+(("))</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.incbin.monkey</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.monkey</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>string.quoted.double.monkey</string>
-				</dict>
-			</dict>
-			<key>contentName</key>
-			<string>string.quoted.double.monkey</string>
-			<key>end</key>
-			<string>(")</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.monkey</string>
-				</dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>string.quoted.double.monkey</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>incbin.monkey</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#mnky_string_content</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>(?i)\b(moduleinfo)\s+(("))</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.moduleinfo.monkey</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.begin.monkey</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>string.quoted.double.monkey</string>
-				</dict>
-			</dict>
-			<key>contentName</key>
-			<string>string.quoted.double.monkey</string>
-			<key>end</key>
-			<string>(")</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.string.end.monkey</string>
-				</dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>string.quoted.double.monkey</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>moduleinfo.monkey</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#mnky_string_content</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>(?i)(?:(?:^|;)\s*)(class)\s+([a-zA-Z_]\w*)(?:\s+(extends)\s+([a-zA-Z_]\w*))?(?:\s+(final|abstract))?</string>
+			<string>(?i)\b(class)\s+([a-zA-Z_]\w*)(?:\s+(extends)\s+([a-zA-Z_]\w*))?(?:\s+(final|abstract))?</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -431,15 +247,11 @@
 					<key>include</key>
 					<string>#mnky_constructor</string>
 				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_preprocessor</string>
-				</dict>
 			</array>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\s*\b(c(ase|ontinue)|do|e(lse(\s?if)?|nd(class|for(each)?|function|if|method|select|while)|xit)|for(\s?each)?|if|return|select|wend|while)\b</string>
+			<string>\s*\b(c(ase|ontinue)|do|e(lse(\s?if)?|nd(class|for(each)?|function|if|method|select|while)|xit)|for(\s?each)?|if|return|select|then|wend|while)\b</string>
 			<key>name</key>
 			<string>control.keywords.monkey</string>
 		</dict>
@@ -449,7 +261,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?i)(?:(?:^|;)\s*)(while)\b</string>
+			<string>(?i)\b(while)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -459,7 +271,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?i)(?:(?:^|;)\s*)(end(\s?while)?|wend)\b</string>
+			<string>(?i)\b(end(\s?while)?|wend)\b</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -480,7 +292,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?i)(?:(?:^|;)\s*)(if|else)\b</string>
+			<string>(?i)\b(if)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -490,7 +302,44 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?i)(?:(?:^|;)\s*)(end(\s?if)?)\b</string>
+			<string>$</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.if.end.monkey</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>control.if-then.monkey</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(then)\b</string>
+					<key>name</key>
+					<string>keyword.control.then.monkey</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(?i)\b(if|then|else|else(\s?if)?)\b</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.if.monkey</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?i)\b(end(\s?if)?)\b</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -504,6 +353,24 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>match</key>
+					<string>(?i)\b(then)\b</string>
+					<key>name</key>
+					<string>keyword.control.then.monkey</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(else(\s?if)?)\b</string>
+					<key>name</key>
+					<string>keyword.control.else-if.monkey</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(else)\b</string>
+					<key>name</key>
+					<string>keyword.control.else.monkey</string>
+				</dict>
+				<dict>
 					<key>include</key>
 					<string>$self</string>
 				</dict>
@@ -511,7 +378,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?i)(?:(?:^|;)\s*)(for)\b</string>
+			<string>(?i)\b(for)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -521,7 +388,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?i)(?:(?:^|;)\s*)(next)\b</string>
+			<string>(?i)\b(next)\b</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -566,7 +433,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?i)(?:(?:^|;)\s*)(repeat)\b</string>
+			<string>(?i)\b(repeat)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -576,7 +443,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?i)(?:(?:^|;)\s*)(until|forever)\b</string>
+			<string>(?i)\b(until|forever)\b</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -597,7 +464,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?i)(?:(?:^|;)\s*)(select)\b</string>
+			<string>(?i)\b(select)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -607,7 +474,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(?i)(?:(?:^|;)\s*)(end(\s?select)?)\b</string>
+			<string>(?i)\b(end(\s?select)?)\b</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
@@ -630,7 +497,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(?i)(?:(?:^|;)\s*)(case)\b</string>
+					<string>(?i)\b(case)\b</string>
 					<key>name</key>
 					<string>control.select.case.monkey</string>
 				</dict>
@@ -644,7 +511,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(?i)(?:(?:^|;)\s*)(default)\b</string>
+					<string>(?i)\b(default)\b</string>
 					<key>name</key>
 					<string>control.select.default.monkey</string>
 				</dict>
@@ -656,13 +523,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(mod|shr|shl|and|or|not)\b</string>
+			<string>(?i)\b(mod|shl|shr|and|or|not)\b</string>
 			<key>name</key>
 			<string>keyword.operator.monkey</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>:?[\^+\-=&amp;|&gt;&lt;]</string>
+			<string>:?[\^+\-&amp;~|=&gt;&lt;]</string>
 			<key>name</key>
 			<string>keyword.operator.monkey</string>
 		</dict>
@@ -674,7 +541,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(strict|superstrict)\b</string>
+			<string>(?i)\b(strict)\b</string>
 			<key>name</key>
 			<string>keyword.other.strictness.monkey</string>
 		</dict>
@@ -846,7 +713,7 @@
 		<key>mnky_comment_block</key>
 		<dict>
 			<key>begin</key>
-			<string>(?i)(?&lt;=\s|^|;)(?&lt;!end|end\s)\#rem\b</string>
+			<string>(?i)(?&lt;=\s|^|;)\#rem\b</string>
 			<key>end</key>
 			<string>(?i)(?&lt;=\s|^|;)\#end\b</string>
 			<key>name</key>
@@ -976,7 +843,7 @@
 		<key>mnky_function</key>
 		<dict>
 			<key>begin</key>
-			<string>(?i)(?:(?:^|;)\s*)(function)\s+([a-zA-Z_]\w*)\b</string>
+			<string>(?i)\b(function)\s+([a-zA-Z_]\w*)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1057,7 +924,7 @@
 		<key>mnky_method</key>
 		<dict>
 			<key>begin</key>
-			<string>(?i)(?:(?:^|;)\s*)(method)\s+([a-zA-Z_]\w*)\b</string>
+			<string>(?i)\b(method)\s+([a-zA-Z_]\w*)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -1117,13 +984,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(\%[01]{1,128})</string>
+					<string>([01]{1,128})</string>
 					<key>name</key>
 					<string>constant.numeric.integer.binary.monkey</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(?x) (?&lt;! % | \$ ) (
+					<string>(?x) (?&lt;! \$ ) (
 							\b ([0-9]+ \. [0-9]+) |
 							(\. [0-9]+)
 						)</string>
@@ -1141,36 +1008,9 @@
 		<key>mnky_pi</key>
 		<dict>
 			<key>match</key>
-			<string>\b(HALF|TWO)*PI\b</string>
+			<string>\b(HALF|TWO)?PI\b</string>
 			<key>name</key>
 			<string>constant.language.monkey</string>
-		</dict>
-		<key>mnky_pointerops</key>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>storage.modifier.monkey</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.operator.monkey</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(?i)\b(?:(ptr|var)|(varptr))\b</string>
-			<key>name</key>
-			<string>pointerops.monkey</string>
-		</dict>
-		<key>mnky_preprocessor</key>
-		<dict>
-			<key>match</key>
-			<string>(?i)^\s*\?(not\s+)?\w*</string>
-			<key>name</key>
-			<string>keyword.control.preprocessor.monkey</string>
 		</dict>
 		<key>mnky_string_content</key>
 		<dict>
@@ -1243,7 +1083,7 @@
 		<key>mnky_types</key>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(object|string|byte|short|int|long|float|double)\b</string>
+			<string>(?i)\b(array|bool|int|float|string)\b</string>
 			<key>name</key>
 			<string>storage.type.monkey</string>
 		</dict>

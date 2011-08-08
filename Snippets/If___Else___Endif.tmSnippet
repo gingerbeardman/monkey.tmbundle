@@ -10,7 +10,7 @@ Else
 EndIf
 $4</string>
 	<key>name</key>
-	<string>If...Else...Endif</string>
+	<string>If...Else...EndIf</string>
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>tabTrigger</key>

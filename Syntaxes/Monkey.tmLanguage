@@ -53,10 +53,6 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#mnky_pointerops</string>
-		</dict>
-		<dict>
-			<key>include</key>
 			<string>#mnky_attributes</string>
 		</dict>
 		<dict>
@@ -202,10 +198,6 @@
 				<dict>
 					<key>include</key>
 					<string>#mnky_attributes</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#mnky_pointerops</string>
 				</dict>
 				<dict>
 					<key>include</key>

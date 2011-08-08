@@ -78,16 +78,27 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 - monkey [http://www.monkeycoder.co.nz](http://www.monkeycoder.co.nz)
 
 ## Known issues
-Single line if statements can result in syntax colouring errors.
+None
 
 ## Changelog
 
-**TO DO**  
-- Reserved words  
-- Modules and self-defined keywords such as globals, class names, both of current code, or imported modules  
-- String literals  
-- Numbers, operators and comments  
-
+**2011-08-08**  
+- Reduced number of foldable elements  
+- Added keyEquivalent ^⌥⇧+M to activate bundle  
+- Renamed bundle from monkey to Monkey  
+- Removed preprocessor grammar  
+- Removed framework grammar  
+- Removed module grammar  
+- Added better if/then/elseif/else/endif handling  
+- Added bitwise complement operator  
+- Removed superstrict reference  
+- Tidied block comment grammar  
+- Replaced instances of (?:(?:^|;)\s*) with neater \b (regexp boundary)  
+- Removed references to integer number symbol %  
+- Corrected PI constants regexp  
+- Removed pointerops grammar  
+- Removed unused types from types grammar  
+  
 **2011-06-28**  
 - Added support for ⌥⎋ (Option+Escape) auto-completion menu  
 

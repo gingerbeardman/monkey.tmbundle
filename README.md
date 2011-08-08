@@ -83,6 +83,7 @@ None
 ## Changelog
 
 **2011-08-08**  
+- Added else/elseif snippet  
 - Reduced number of foldable elements  
 - Added keyEquivalent ^⌥⇧+M to activate bundle  
 - Renamed bundle from monkey to Monkey  

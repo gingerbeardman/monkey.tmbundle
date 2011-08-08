@@ -55,6 +55,7 @@
 					<string>C5512EF1-EC18-4B1D-B110-C743A4A0013C</string>
 					<string>B77C0ED6-B710-43EC-B1EC-3A6B8C9180B6</string>
 					<string>9ECB35EE-FF86-4CE4-91E2-0B899B16ADFC</string>
+					<string>A22CC931-0564-412E-B5C4-4698149A77F9</string>
 					<string>FEB3C555-0D5D-4C3A-8959-EFF8E4EAB4B2</string>
 					<string>03BC3EEA-8074-4227-A681-F3A127CD43CC</string>
 					<string>BE5B73AC-FB1C-4434-8452-228284F790AC</string>
@@ -165,7 +166,7 @@
 		</dict>
 	</dict>
 	<key>name</key>
-	<string>monkey</string>
+	<string>Monkey</string>
 	<key>ordering</key>
 	<array>
 		<string>622229C4-3E96-47AE-9C2C-235DB5BC068C</string>
@@ -221,6 +222,7 @@
 		<string>C5512EF1-EC18-4B1D-B110-C743A4A0013C</string>
 		<string>B77C0ED6-B710-43EC-B1EC-3A6B8C9180B6</string>
 		<string>9ECB35EE-FF86-4CE4-91E2-0B899B16ADFC</string>
+		<string>A22CC931-0564-412E-B5C4-4698149A77F9</string>
 		<string>FEB3C555-0D5D-4C3A-8959-EFF8E4EAB4B2</string>
 		<string>03BC3EEA-8074-4227-A681-F3A127CD43CC</string>
 		<string>BE5B73AC-FB1C-4434-8452-228284F790AC</string>

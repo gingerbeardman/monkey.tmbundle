@@ -1,8 +1,9 @@
 monkey.tmbundle
 ===============
 
-This bundle lets you to use the Mac OS X editor [TextMate](http://macromates.com) as an IDE for the [monkey programming language](http://www.monkeycoder.co.nz). It is based in part on the existing [blitzmax.bundle](https://github.com/nilium/blitzmax.tmbundle) so thanks to Nilium for that.
+This bundle lets you to use the Mac OS X editor [TextMate](http://macromates.com) and Windows editor [E Text Editor](http://www.e-texteditor.com) as an IDE for the [monkey programming language](http://www.monkeycoder.co.nz). It is based in part on the existing [blitzmax.bundle](https://github.com/nilium/blitzmax.tmbundle) so thanks to Nilium for that.
 
+Created by Matt Sephton, [http://www.gingerbeardman.com/monkey/](http://www.gingerbeardman.com/monkey/)
 
 ## Features
 
@@ -66,9 +67,9 @@ Build options are formatted as comments inside your source code and do not have 
 
 where 'option' is the option you're enabling for the Build & Run commands.  The comments must be on their own lines with only whitespace preceeding them.
 
-## License
+## Windows
 
-monkey.tmundle is made available under a [Creative Commons Attribution-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0).
+Use of the bundle under Windows using the [E Text Editor](http://www.e-texteditor.com/) is possible. I'd happily include any hints and tips here if you have them. Otherwise, please consult the [E forum](http://www.e-texteditor.com/forum/viewforum.php?f=6).
 
 ## Support
 You can talk about the bundle on the [official monkey forum](http://www.monkeycoder.co.nz/Community/posts.php?topic=69)
@@ -77,8 +78,8 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 - TextMate [http://macromates.com](http://macromates.com)
 - monkey [http://www.monkeycoder.co.nz](http://www.monkeycoder.co.nz)
 
-## Known issues
-None
+## License
+monkey.tmbundle is made available under a [Creative Commons Attribution-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0).
 
 ## Changelog
 

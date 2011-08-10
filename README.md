@@ -1,11 +1,14 @@
 monkey.tmbundle
 ===============
 
-This bundle lets you to use the Mac OS X editor [TextMate](http://macromates.com) and Windows editor [E Text Editor](http://www.e-texteditor.com) as an IDE for the [monkey programming language](http://www.monkeycoder.co.nz). It is based in part on the existing [blitzmax.bundle](https://github.com/nilium/blitzmax.tmbundle) so thanks to Nilium for that.
+This bundle lets you to use the Mac OS X editor [TextMate](http://macromates.com) or Windows editor [E Text Editor](http://www.e-texteditor.com) as an IDE for the [monkey programming language](http://www.monkeycoder.co.nz). It is based in part on the existing [blitzmax.bundle](https://github.com/nilium/blitzmax.tmbundle) so thanks to Nilium for that.
 
 Created by Matt Sephton, [http://www.gingerbeardman.com/monkey/](http://www.gingerbeardman.com/monkey/)
 
 ## Features
+
+**Syntax Colouring**  
+Easily see the difference between keywords, constants, strings, comments, numbers and functions/classes/methods
 
 **Auto Completion of Keywords**  
 Press the Escape key to cycle through all matches after typing part of a keyword, Shift+Escape will take cycle backwards, Option+Escape will present a list of matches for you to choose from
@@ -25,14 +28,17 @@ View the monkey module docs in a popup window by pressing F13
 **Quick Start Template**  
 One click skeleton template to get you started, build to see instant results
 
-**Syntax Colouring**, **Code Folding**, **Configurable Shortcut Keys**  
+**Easy Source Navigation**  
+Navigate around your source using the index of functions, classes and methods
+
+**Code Folding**, **Configurable Shortcut Keys**  
 ...and more!
 
 ## Installation
 
 To use unzip and double click, or manually move the bundle to:  
-`/Users/username/Library/Application Support/TextMate/Bundles/monkey.tmbundle`
 
+	/Users/username/Library/Application Support/TextMate/Bundles/monkey.tmbundle
 
 ## Usage
 
@@ -69,7 +75,7 @@ where 'option' is the option you're enabling for the Build & Run commands.  The 
 
 ## Windows
 
-Use of the bundle under Windows using the [E Text Editor](http://www.e-texteditor.com/) is possible. I'd happily include any hints and tips here if you have them. Otherwise, please consult the [E forum](http://www.e-texteditor.com/forum/viewforum.php?f=6).
+Use of the bundle under Windows using the [E Text Editor](http://www.e-texteditor.com/) is possible. I'll happily include any hints and tips here if you have them. Otherwise, please consult the [E forum](http://www.e-texteditor.com/forum/viewforum.php?f=6).
 
 ## Support
 You can talk about the bundle on the [official monkey forum](http://www.monkeycoder.co.nz/Community/posts.php?topic=69)
@@ -82,6 +88,12 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 monkey.tmbundle is made available under a [Creative Commons Attribution-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0).
 
 ## Changelog
+
+**2011-08-09**  
+- Removed extraneous JOY constants  
+- Added missing JoyX/Y/Z keywords  
+- Added TARGET const  
+- Removed binary integer grammar which was resulting in incorrect display of numerical values  
 
 **2011-08-08**  
 - Added else/elseif snippet  

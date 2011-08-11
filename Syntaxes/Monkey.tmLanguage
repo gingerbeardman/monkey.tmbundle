@@ -790,7 +790,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#mnky_target</string>
+					<string>#mnky_env</string>
 				</dict>
 			</array>
 		</dict>
@@ -820,6 +820,13 @@
 			<string>(?i)\b(throw|return|exit|continue)\b</string>
 			<key>name</key>
 			<string>keyword.control.monkey</string>
+		</dict>
+		<key>mnky_env</key>
+		<dict>
+			<key>match</key>
+			<string>\b(TARGET|LANG)\b</string>
+			<key>name</key>
+			<string>constant.language.env.monkey</string>
 		</dict>
 		<key>mnky_field</key>
 		<dict>
@@ -1049,13 +1056,6 @@
 					<string>#mnky_string_content</string>
 				</dict>
 			</array>
-		</dict>
-		<key>mnky_target</key>
-		<dict>
-			<key>match</key>
-			<string>\b(TARGET|LANG)\b</string>
-			<key>name</key>
-			<string>constant.language.target.monkey</string>
 		</dict>
 		<key>mnky_typename</key>
 		<dict>

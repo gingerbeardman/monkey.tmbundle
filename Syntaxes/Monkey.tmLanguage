@@ -1053,7 +1053,7 @@
 		<key>mnky_target</key>
 		<dict>
 			<key>match</key>
-			<string>\bTARGET\b</string>
+			<string>\b(TARGET|LANG)\b</string>
 			<key>name</key>
 			<string>constant.language.target.monkey</string>
 		</dict>

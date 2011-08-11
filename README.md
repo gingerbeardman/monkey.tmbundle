@@ -22,6 +22,9 @@ Specify target, config and run options in the source - no need for the command l
 **Build/Run hotkeys**  
 Quick and easy full build by pressing ⌘B, or a quicker update and run using ⌘R
 
+**Jump to Error**  
+Automatically jump to error after update and run, or with a click after full build
+
 **Context Sensitive Help**  
 View the monkey module docs in a popup window by pressing F13
 
@@ -46,7 +49,7 @@ To use unzip and double click, or manually move the bundle to:
 
 Before you can use the _monkey_ bundle, you must first set the `TM_MONKEY` shell variable.
 
-To do this, open TextMate's preferences (⌘,) and navigate to the _Advanced_ pane.  Select the _Shell Variables_ tab and add the TM\_MONKEY variable, where its value is the location of your _monkey_ installation.  For example, "/Developer/Applications/monkey".  Do not include a trailing slash in the path.
+To do this, open TextMate's preferences (⌘,) and navigate to the _Advanced_ pane.  Select the _Shell Variables_ tab and add the `TM_MONKEY` variable, where its value is the location of your _monkey_ installation.  For example, "/Developer/Applications/monkey".  Do not include a trailing slash in the path.
 
 This variable allows you to build your applications (⌘B). Documentation and trans lookups are relative to this location.
 
@@ -88,6 +91,9 @@ You can talk about the bundle on the [official monkey forum](http://www.monkeyco
 monkey.tmbundle is made available under a [Creative Commons Attribution-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0).
 
 ## Changelog
+
+**2011-08-11**  
+- Added jump to error capability  
 
 **2011-08-09**  
 - Removed extraneous JOY constants  

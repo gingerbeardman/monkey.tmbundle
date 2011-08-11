@@ -108,11 +108,17 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 
 	# build/fail?
 	if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
-		$TRANS $BUILDOPTS "$MNKY_COMPILE_PATH" 2&gt;&amp;1 | grep "BUILD" | tail -1
+		# $TRANS $BUILDOPTS "$MNKY_COMPILE_PATH" 2&gt;&amp;1 | grep "BUILD" | tail -1
+		OUTPUT=`$TRANS $BUILDOPTS "$MNKY_COMPILE_PATH" | tail -1`
+		echo "$OUTPUT"
+		ERR_LINE=`echo "$OUTPUT" | sed 's/.*&lt;\([0-9]*\)&gt;.*/\1/'`
+		if [[ -n "$ERR_LINE" ]] ; then
+			open "txmt://open/?url=file://$MNKY_COMPILE_PATH&amp;line=$ERR_LINE"
+		fi
 	fi
 
 else
-	pre "Build failed"
+	echo "&lt;pre&gt;Build failed&lt;/pre&gt;"
 fi
 
 exit_show_tool_tip</string>

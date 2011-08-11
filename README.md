@@ -94,6 +94,7 @@ monkey.tmbundle is made available under a [Creative Commons Attribution-Share Al
 
 **2011-08-11**  
 - Added jump to error capability  
+- Added LANG const  
 
 **2011-08-09**  
 - Removed extraneous JOY constants  

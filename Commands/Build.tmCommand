@@ -132,7 +132,7 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 		echo "&lt;h3&gt;Output...&lt;/h3&gt;"
 		echo "&lt;pre&gt;"
 
-		# $TRANS $BUILDOPTS "$MNKY_COMPILE_PATH" 2&gt;&amp;1
+		# $TRANS $BUILDOPTS "$MNKY_COMPILE_PATH" 2&gt;&amp;amp;1
 		OUTPUT=`$TRANS $BUILDOPTS "$MNKY_COMPILE_PATH"`
 		END_LINE=`echo "$OUTPUT" | tail -1`
 		echo "$OUTPUT"
@@ -141,8 +141,7 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 
 		ERR_LINE=`echo "$END_LINE" | sed 's/.*&lt;\([0-9]*\)&gt;.*/\1/'`
 		if [[ "$END_LINE" != "Building..." ]] ; then
-			echo "&lt;h3&gt;Error...&lt;/h3&gt;"
-			echo "&lt;a href='txmt://open/?url=file://$MNKY_COMPILE_PATH&amp;line=$ERR_LINE'&gt;Jump to line $ERR_LINE&lt;/a&gt;"
+			open "txmt://open/?url=file://$MNKY_COMPILE_PATH&amp;line=$ERR_LINE"
 		fi
 	fi
 

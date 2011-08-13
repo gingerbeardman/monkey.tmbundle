@@ -7,8 +7,8 @@ Created by Matt Sephton, [http://www.gingerbeardman.com/monkey/](http://www.ging
 
 ## Features
 
-**Syntax Colouring**  
-Easily see the difference between keywords, constants, strings, comments, numbers and functions/classes/methods
+**Syntax Highlighting**  
+Easily see keywords, constants, strings, comments, numbers and functions/classes/methods in your code
 
 **Auto Completion of Keywords**  
 Press the Escape key to cycle through all matches after typing part of a keyword, Shift+Escape will take cycle backwards, Option+Escape will present a list of matches for you to choose from

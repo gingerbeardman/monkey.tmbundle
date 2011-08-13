@@ -94,6 +94,10 @@ monkey.tmbundle is made available under a [Creative Commons Attribution-Share Al
 
 ## Changelog
 
+**2011-08-14**  
+- Build now jumps to error  
+- Neater error reporting on Run  
+
 **2011-08-11**  
 - Added jump to error capability  
 - Added LANG const  

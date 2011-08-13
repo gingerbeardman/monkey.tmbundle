@@ -39,6 +39,8 @@ Navigate around your source using the index of functions, classes and methods
 
 ## Installation
 
+Please check that the download is named `monkey.tmbundle` and not something else. You may have to rename it.
+
 To use unzip and double click, or manually move the bundle to:  
 
 	/Users/username/Library/Application Support/TextMate/Bundles/monkey.tmbundle

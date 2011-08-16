@@ -284,43 +284,6 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?i)\b(if)\b</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.control.if.monkey</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>$</string>
-			<key>endCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.control.if.end.monkey</string>
-				</dict>
-			</dict>
-			<key>name</key>
-			<string>control.if-then.monkey</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>match</key>
-					<string>(?i)\b(then)\b</string>
-					<key>name</key>
-					<string>keyword.control.then.monkey</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
 			<string>(?i)\b(if|then|else|else(\s?if)?)\b</string>
 			<key>beginCaptures</key>
 			<dict>
@@ -361,6 +324,43 @@
 					<string>(?i)\b(else)\b</string>
 					<key>name</key>
 					<string>keyword.control.else.monkey</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(?i)\b(if)\b</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.if.monkey</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>$</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.if.end.monkey</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>control.if-then.monkey</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(then)\b</string>
+					<key>name</key>
+					<string>keyword.control.then.monkey</string>
 				</dict>
 				<dict>
 					<key>include</key>

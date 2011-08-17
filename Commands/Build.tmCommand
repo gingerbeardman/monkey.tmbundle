@@ -139,9 +139,10 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 
 		echo "&lt;/pre&gt;"
 
+		ERR_FILE=`echo "$END_LINE" | sed 's/\(.*\)&lt;[0-9]*&gt;.*/\1/'`
 		ERR_LINE=`echo "$END_LINE" | sed 's/.*&lt;\([0-9]*\)&gt;.*/\1/'`
 		if [[ "$END_LINE" != "Building..." ]] ; then
-			open "txmt://open/?url=file://$MNKY_COMPILE_PATH&amp;line=$ERR_LINE"
+			open "txmt://open/?url=file://$ERR_FILE&amp;line=$ERR_LINE"
 		fi
 	fi
 

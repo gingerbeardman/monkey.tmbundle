@@ -94,6 +94,9 @@ monkey.tmbundle is made available under a [Creative Commons Attribution-Share Al
 
 ## Changelog
 
+**2011-08-17**  
+- Jumps to error now opens the correct file containing the error  
+
 **2011-08-14**  
 - Build now jumps to error  
 - Neater error reporting on Run  

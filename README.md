@@ -76,7 +76,7 @@ Build options are formatted as comments inside your source code and do not have 
 
    `' buildopt: option`
 
-where 'option' is the option you're enabling for the Build & Run commands.  The comments must be on their own lines with only whitespace preceeding them.
+where 'option' is the option you're enabling for the Build & Run commands.  The comments must be on their own lines with only whitespace preceding  them.
 
 ## Windows
 

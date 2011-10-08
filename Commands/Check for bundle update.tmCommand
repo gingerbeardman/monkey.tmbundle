@@ -5,14 +5,21 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>CURRENT="2011-10-08B"
+	<string>CURRENT="20111008"
 WEB=`curl -s https://raw.github.com/gingerbeardman/monkey.tmbundle/master/version.txt`
+#WEB=`curl -s file:///Users/matt/Library/Application%20Support/TextMate/Bundles/monkey.tmbundle/version.txt`
 
-if [ "$CURRENT" != "$WEB" ]
+echo "$CURRENT"
+echo "$WEB"
+
+if [ "$CURRENT" -lt "$WEB" ]
 then
 	UPDATE="A newer version of monkey.tmbundle is available!"
+elif [ "$CURRENT" -gt "$WEB" ]
+then
+	UPDATE="You are using a development version of monkey.tmbundle"
 else
-	UPDATE="Your monkey.tmbundle is up to date."
+	UPDATE="Your monkey.tmbundle is up to date"
 fi
 
 echo "$UPDATE"

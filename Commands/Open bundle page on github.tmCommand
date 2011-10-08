@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>open https://github.com/gingerbeardman/monkey.tmbundle</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^$§</string>
+	<key>name</key>
+	<string>Open bundle page on github</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>uuid</key>
+	<string>62313605-129B-4DA1-B2E0-9F7A5FC3F757</string>
+</dict>
+</plist>

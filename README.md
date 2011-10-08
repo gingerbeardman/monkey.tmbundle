@@ -95,6 +95,7 @@ monkey.tmbundle is made available under a [Creative Commons Attribution-Share Al
 ## Changelog
 
 **2011-10-08**  
+- Added "Check for bundle update" and  "Open bundle page on github" commands  
 - Added FirstNode, LastNode, NextNode, PrevNode, Exp (v45c)  
 - Added DisableKeyboard, EnableKeyboard (v45)  
 - Added ACosr, ASinr, ATan2r, ATanr, Cosr, Sinr, Tanr (v44)  

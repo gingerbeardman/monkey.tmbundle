@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>CURRENT="2011-10-08B"
+WEB=`curl -s https://raw.github.com/gingerbeardman/monkey.tmbundle/master/version.txt`
+
+if [ "$CURRENT" != "$WEB" ]
+then
+	UPDATE="A newer version of monkey.tmbundle is available!"
+else
+	UPDATE="Your monkey.tmbundle is up to date."
+fi
+
+echo "$UPDATE"
+exit_show_tool_tip
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^§</string>
+	<key>name</key>
+	<string>Check for bundle update</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.monkey</string>
+	<key>uuid</key>
+	<string>D0346C7D-DAD1-417D-8767-83DCC9438461</string>
+</dict>
+</plist>

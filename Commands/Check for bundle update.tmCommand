@@ -7,10 +7,6 @@
 	<key>command</key>
 	<string>CURRENT="20111008"
 WEB=`curl -s https://raw.github.com/gingerbeardman/monkey.tmbundle/master/version.txt`
-#WEB=`curl -s file:///Users/matt/Library/Application%20Support/TextMate/Bundles/monkey.tmbundle/version.txt`
-
-echo "$CURRENT"
-echo "$WEB"
 
 if [ "$CURRENT" -lt "$WEB" ]
 then

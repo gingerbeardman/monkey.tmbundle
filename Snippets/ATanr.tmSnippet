@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Cls ${1:red#=0}, ${2:green#=0}, ${3:blue#=0}$4</string>
+	<string>ATanr( ${1:x#} )$2</string>
 	<key>name</key>
-	<string>Cls</string>
+	<string>ATanr</string>
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>tabTrigger</key>
-	<string>cls</string>
+	<string>atanr</string>
 	<key>uuid</key>
-	<string>611FDF47-9BA5-4EB6-81D2-6704B8A522D7</string>
+	<string>D1D107F7-E9BE-4041-996B-E26B87CC890F</string>
 </dict>
 </plist>

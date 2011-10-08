@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Remove( ${1:value/key} )$2</string>
+	<string>Remove( ${1:index/value/key} )$2</string>
 	<key>name</key>
 	<string>Remove</string>
 	<key>scope</key>

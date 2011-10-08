@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Cls ${1:red#=0}, ${2:green#=0}, ${3:blue#=0}$4</string>
+	<string>MusicState()$1</string>
 	<key>name</key>
-	<string>Cls</string>
+	<string>MusicState</string>
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>tabTrigger</key>
-	<string>cls</string>
+	<string>musicstate</string>
 	<key>uuid</key>
-	<string>611FDF47-9BA5-4EB6-81D2-6704B8A522D7</string>
+	<string>BB0303C4-6EB5-41B1-BAF4-488EEF767EDA</string>
 </dict>
 </plist>

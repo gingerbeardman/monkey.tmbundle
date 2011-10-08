@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Error( "${1:msg$}" )$2</string>
+	<string>Error( "${1:string$}" )$2</string>
 	<key>name</key>
 	<string>Error</string>
 	<key>scope</key>

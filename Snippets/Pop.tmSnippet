@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Cls ${1:red#=0}, ${2:green#=0}, ${3:blue#=0}$4</string>
+	<string>Pop()$1</string>
 	<key>name</key>
-	<string>Cls</string>
+	<string>Pop</string>
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>tabTrigger</key>
-	<string>cls</string>
+	<string>pop</string>
 	<key>uuid</key>
-	<string>611FDF47-9BA5-4EB6-81D2-6704B8A522D7</string>
+	<string>FA0C8419-6F97-4D74-AECE-A2A8D024AB52</string>
 </dict>
 </plist>

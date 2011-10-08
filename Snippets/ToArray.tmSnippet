@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Cls ${1:red#=0}, ${2:green#=0}, ${3:blue#=0}$4</string>
+	<string>ToArray()$1</string>
 	<key>name</key>
-	<string>Cls</string>
+	<string>ToArray</string>
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>tabTrigger</key>
-	<string>cls</string>
+	<string>toarray</string>
 	<key>uuid</key>
-	<string>611FDF47-9BA5-4EB6-81D2-6704B8A522D7</string>
+	<string>3D7BCED3-20C2-4F46-9781-57EEFAFD9E44</string>
 </dict>
 </plist>

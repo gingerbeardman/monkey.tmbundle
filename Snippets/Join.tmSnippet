@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Join( ${1:bits$[]} )$2</string>
+	<string>Join( ${1:peices$[]/separator$} )$2</string>
 	<key>name</key>
 	<string>Join</string>
 	<key>scope</key>

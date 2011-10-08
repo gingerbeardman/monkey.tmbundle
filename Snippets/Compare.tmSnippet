@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Cls ${1:red#=0}, ${2:green#=0}, ${3:blue#=0}$4</string>
+	<string>Compare( "${1:string$}" )$2</string>
 	<key>name</key>
-	<string>Cls</string>
+	<string>Compare</string>
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>tabTrigger</key>
-	<string>cls</string>
+	<string>compare</string>
 	<key>uuid</key>
-	<string>611FDF47-9BA5-4EB6-81D2-6704B8A522D7</string>
+	<string>1EC5B958-AD10-453B-9282-EA67B8F103E3</string>
 </dict>
 </plist>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>PlaySound ${1:sound}$2</string>
+	<string>PlaySound( ${1:sound}, ${2:channel}, ${3:flags} )$4</string>
 	<key>name</key>
 	<string>PlaySound</string>
 	<key>scope</key>

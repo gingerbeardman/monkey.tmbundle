@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Cls ${1:red#=0}, ${2:green#=0}, ${3:blue#=0}$4</string>
+	<string>DeviceWidth()$1</string>
 	<key>name</key>
-	<string>Cls</string>
+	<string>DeviceWidth</string>
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>tabTrigger</key>
-	<string>cls</string>
+	<string>devicewidth</string>
 	<key>uuid</key>
-	<string>611FDF47-9BA5-4EB6-81D2-6704B8A522D7</string>
+	<string>8FB4306F-AEBD-46F2-8547-6A45574D5C98</string>
 </dict>
 </plist>

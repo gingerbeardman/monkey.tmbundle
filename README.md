@@ -94,6 +94,9 @@ monkey.tmbundle is made available under a [Creative Commons Attribution-Share Al
 
 ## Changelog
 
+**2011-10-20**  
+- Fixed Build & Run command. Now displays tooltip rather than opening a blank document
+
 **2011-10-08**  
 - Added "Check for bundle update" and  "Open bundle page on github" commands  
 - Added FirstNode, LastNode, NextNode, PrevNode, Exp (v45c)  

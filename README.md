@@ -76,7 +76,7 @@ Build options are formatted as comments inside your source code and do not have 
 
    `' buildopt: option`
 
-where 'option' is the option you're enabling for the Build & Run commands.  The comments must be on their own lines with only whitespace preceding  them.
+where 'option' is the option you're enabling for the Build and Run commands.  The comments must be on their own lines with only whitespace preceding  them.
 
 ## Windows
 
@@ -95,7 +95,7 @@ monkey.tmbundle is made available under a [Creative Commons Attribution-Share Al
 ## Changelog
 
 **2011-10-20**  
-- Fixed Build & Run command. Now displays tooltip rather than opening a blank document
+- Fixed the Update & Run (⌘R) command. Now displays tooltip rather than opening a blank document
 
 **2011-10-08**  
 - Added "Check for bundle update" and  "Open bundle page on github" commands  

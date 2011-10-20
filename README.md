@@ -34,6 +34,9 @@ One click skeleton template to get you started, build to see instant results
 **Easy Source Navigation**  
 Navigate around your source using the index of functions, classes and methods
 
+**Bundle Update Check**  
+Easily see if you're using the most recent version of the bundle
+
 **Code Folding**, **Configurable Shortcut Keys**  
 ...and more!
 
@@ -95,7 +98,8 @@ monkey.tmbundle is made available under a [Creative Commons Attribution-Share Al
 ## Changelog
 
 **2011-10-20**  
-- Fixed the Update & Run (⌘R) command. Now displays tooltip rather than opening a blank document
+- Fixed the Update & Run (⌘R) command. Now displays tooltip rather than opening a blank document  
+- Renamed bundle update menu items for clarity  
 
 **2011-10-08**  
 - Added "Check for bundle update" and  "Open bundle page on github" commands  

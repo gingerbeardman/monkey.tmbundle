@@ -5,13 +5,13 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>open https://github.com/gingerbeardman/monkey.tmbundle</string>
+	<string>open https://github.com/gingerbeardman/monkey.tmbundle/downloads</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
 	<string>^$§</string>
 	<key>name</key>
-	<string>Open bundle page on github...</string>
+	<string>Open bundle download page on github...</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>

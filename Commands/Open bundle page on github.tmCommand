@@ -11,7 +11,7 @@
 	<key>keyEquivalent</key>
 	<string>^$§</string>
 	<key>name</key>
-	<string>Open bundle page on github</string>
+	<string>Open bundle page on github...</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>

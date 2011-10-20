@@ -110,18 +110,20 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 	if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 		# $TRANS $BUILDOPTS "$MNKY_COMPILE_PATH" 2&gt;&amp;1 | grep "BUILD" | tail -1
 		OUTPUT=`$TRANS $BUILDOPTS "$MNKY_COMPILE_PATH" | tail -1`
-		# echo "$OUTPUT"
-		ERR_FILE=`echo "$OUTPUT" | sed 's/\(.*\)&lt;[0-9]*&gt;.*/\1/'`
-		ERR_LINE=`echo "$OUTPUT" | sed 's/.*&lt;\([0-9]*\)&gt;.*/\1/'`
-		ERR_MSG=`echo "$OUTPUT" | sed 's/.*&gt; : \(.*\)/\1/'`
-		echo "$ERR_MSG"
-		if [[ -n "$ERR_LINE" ]] ; then
+		END_LINE=`echo "$OUTPUT" | tail -1`
+
+		if [[ "$END_LINE" != "Building..." ]] ; then
+			ERR_FILE=`echo "$END_LINE" | sed 's/\(.*\)&lt;[0-9]*&gt;.*/\1/'`
+			ERR_LINE=`echo "$END_LINE" | sed 's/.*&lt;\([0-9]*\)&gt;.*/\1/'`
+			ERR_MSG=`echo "$END_LINE" | sed 's/.*&gt; : \(.*\)/\1/'`
+			echo "$ERR_MSG"
+
 			open "txmt://open/?url=file://$ERR_FILE&amp;line=$ERR_LINE"
 		fi
 	fi
 
 else
-	echo "&lt;pre&gt;Build failed&lt;/pre&gt;"
+	echo "Build failed"
 fi
 
 exit_show_tool_tip</string>

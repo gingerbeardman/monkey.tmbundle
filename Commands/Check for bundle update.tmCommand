@@ -5,17 +5,17 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>CURRENT="20111008"
+	<string>CURRENT="20111020"
 WEB=`curl -s https://raw.github.com/gingerbeardman/monkey.tmbundle/master/version.txt`
 
 if [ "$CURRENT" -lt "$WEB" ]
 then
-	UPDATE="A newer version of monkey.tmbundle is available!"
+	UPDATE="A newer version of monkey.tmbundle is available! ($WEB)"
 elif [ "$CURRENT" -gt "$WEB" ]
 then
-	UPDATE="You are using a development version of monkey.tmbundle"
+	UPDATE="You are using a development version of monkey.tmbundle ($CURRENT)"
 else
-	UPDATE="Your monkey.tmbundle is up to date"
+	UPDATE="Your monkey.tmbundle is up to date ($CURRENT)"
 fi
 
 echo "$UPDATE"

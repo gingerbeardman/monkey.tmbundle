@@ -97,6 +97,11 @@ monkey.tmbundle is made available under a [Creative Commons Attribution-Share Al
 
 ## Changelog
 
+**2012-05-04**  
+- Added DrawPoint, improved DrawPoly, Set, FloatSet, IntSet, StringSet keywords  
+- Included Shinkiro1's new View Documentation for current keyword (v53 and newer)  
+- Added new View Documentation (v53 and newer)  
+
 **2011-10-20**  
 - Fixed the Update & Run (⌘R) command. Now displays tooltip rather than opening a blank document  
 - Renamed bundle update menu items for clarity  

@@ -5,7 +5,13 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>open "$TM_MONKEY/docs/index.htm"</string>
+	<string>monkey="$TM_MONKEY";
+preWord="blitz-wiki.appspot.com";
+postWord="4d8a.html";
+keyword="index";
+
+echo "&lt;meta http-equiv=\"refresh\" content=\"0;url=file://$monkey/docs/$preWord/$keyword$postWord\"&gt;";
+</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>

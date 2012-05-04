@@ -47,6 +47,8 @@
 			<string>DrawImageRect</string>
 			<string>DrawLine</string>
 			<string>DrawOval</string>
+			<string>DrawPoint</string>
+			<string>DrawPoly</string>
 			<string>DrawRect</string>
 			<string>DrawText</string>
 			<string>Else</string>
@@ -69,6 +71,7 @@
 			<string>First</string>
 			<string>Float</string>
 			<string>FloatMap</string>
+			<string>FloatSet</string>
 			<string>Floor</string>
 			<string>Frames</string>
 			<string>FromChar</string>
@@ -90,6 +93,7 @@
 			<string>Import</string>
 			<string>Int</string>
 			<string>IntMap</string>
+			<string>IntSet</string>
 			<string>IsEmpty</string>
 			<string>Join</string>
 			<string>JoyDown</string>
@@ -143,6 +147,7 @@
 			<string>Scale</string>
 			<string>Seed</string>
 			<string>Select</string>
+			<string>Set</string>
 			<string>SetAlpha</string>
 			<string>SetBlend</string>
 			<string>SetChannelPan</string>
@@ -165,6 +170,7 @@
 			<string>StopChannel</string>
 			<string>String</string>
 			<string>StringMap</string>
+			<string>StringSet</string>
 			<string>Tan</string>
 			<string>ToLower</string>
 			<string>ToUpper</string>

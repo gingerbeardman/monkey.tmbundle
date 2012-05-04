@@ -1,11 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>beforeRunningCommand</key>
-	<string>nop</string>
-	<key>command</key>
-	<string>monkey="$TM_MONKEY";
+monkey="$TM_MONKEY";
+preWord="blitz-wiki.appspot.com";
+postWord="4d8a.html";
 
 if [[ -n "$TM_SELECTED_TEXT" ]] ; then
 	keyword="$TM_SELECTED_TEXT";
@@ -13,18 +8,4 @@ else
 	keyword="$TM_CURRENT_WORD";
 fi
 
-echo "&lt;meta http-equiv=\"refresh\" content=\"0;url=file://$monkey/docs/modules/index.html#?$keyword$selected\"&gt;";</string>
-	<key>input</key>
-	<string>none</string>
-	<key>keyEquivalent</key>
-	<string></string>
-	<key>name</key>
-	<string>View documentation for current keyword</string>
-	<key>output</key>
-	<string>showAsHTML</string>
-	<key>scope</key>
-	<string>source.monkey</string>
-	<key>uuid</key>
-	<string>1D388BAE-191B-4D8B-A7AD-54AED42E3F6A</string>
-</dict>
-</plist>
+echo "<meta http-equiv=\"refresh\" content=\"0;url=file://$monkey/docs/$preWord/$keyword$postWord\">";

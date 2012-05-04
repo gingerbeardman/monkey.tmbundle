@@ -9,9 +9,9 @@
 	<key>settings</key>
 	<dict>
 		<key>decreaseIndentPattern</key>
-		<string>(?xi)^\s*\bend\s*(extern|type)\b</string>
+		<string>(?xi)^\s*\bend\s*(type)\b</string>
 		<key>increaseIndentPattern</key>
-		<string>(?xi)^\s*\b(?&lt;!end|end\s)(extern|type)\b</string>
+		<string>(?xi)^\s*\b(?&lt;!end|end\s)(type)\b</string>
 		<key>indentNextLinePattern</key>
 		<string>(?xi)^\s*[^\s].*\.\.\s*$</string>
 	</dict>

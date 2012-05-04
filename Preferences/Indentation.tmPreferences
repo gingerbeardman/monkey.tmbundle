@@ -12,7 +12,7 @@
 		<string>(?xi)
 	^\s*(
 	# end &lt;keyword&gt;
-		end\s*(function|method|type|select|while|extern|if|try) |
+		end\s*(function|method|type|select|while|if|try) |
 	# else/if
 		else | else\s*if |
 		catch | wend | until | forever | next
@@ -20,9 +20,9 @@
 		<key>increaseIndentPattern</key>
 		<string>(?xi)
 	^\s*(
-		(?&lt;!end|end\s)(function|method|type|select|while|extern|try|if) |
+		(?&lt;!end|end\s)(function|method|type|select|while|try|if) |
 		else|else\s*if |
-		for | catch | repeat
+		for | repeat
 	)\b</string>
 		<key>indentNextLinePattern</key>
 		<string>(?xi)\.\.\s*('.*)?$</string>

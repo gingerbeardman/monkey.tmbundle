@@ -98,7 +98,8 @@ monkey.tmbundle is made available under a [Creative Commons Attribution-Share Al
 ## Changelog
 
 **2012-05-04**  
-- Added DrawPoint, improved DrawPoly, Set, FloatSet, IntSet, StringSet keywords  
+- Added DrawPoint, Set, FloatSet, IntSet, StringSet keywords  
+- Improved DrawPoly support  
 - Included Shinkiro1's new View Documentation for current keyword (v53 and newer)  
 - Added new View Documentation (v53 and newer)  
 

@@ -6,8 +6,6 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>monkey="$TM_MONKEY";
-preWord="blitz-wiki.appspot.com";
-postWord="4d8a.html";
 
 if [[ -n "$TM_SELECTED_TEXT" ]] ; then
 	keyword="$TM_SELECTED_TEXT";
@@ -15,12 +13,14 @@ else
 	keyword="$TM_CURRENT_WORD";
 fi
 
-echo "&lt;meta http-equiv=\"refresh\" content=\"0;url=file://$monkey/docs/$preWord/$keyword$postWord\"&gt;";
+echo "&lt;meta http-equiv=\"refresh\" content=\"0;url=file://$monkey/docs/html/$keyword.html\"&gt;";
 </string>
+	<key>fallbackInput</key>
+	<string>word</string>
 	<key>input</key>
-	<string>none</string>
+	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string></string>
+	<string></string>
 	<key>name</key>
 	<string>View documentation for current keyword</string>
 	<key>output</key>
@@ -28,6 +28,6 @@ echo "&lt;meta http-equiv=\"refresh\" content=\"0;url=file://$monkey/docs/$preWo
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>uuid</key>
-	<string>1D388BAE-191B-4D8B-A7AD-54AED42E3F6A</string>
+	<string>B680C0EF-37F8-4B9B-802C-579D7A63277F</string>
 </dict>
 </plist>

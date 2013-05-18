@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>'buildopt: flash</string>
+	<string>'buildopt: Flash_Game</string>
 	<key>name</key>
 	<string>Build as flash</string>
 	<key>scope</key>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>'buildopt: android</string>
+	<string>'buildopt: Android_Game</string>
 	<key>name</key>
 	<string>Build as android</string>
 	<key>scope</key>

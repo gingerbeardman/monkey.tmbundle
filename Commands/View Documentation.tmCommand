@@ -6,11 +6,8 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>monkey="$TM_MONKEY";
-preWord="blitz-wiki.appspot.com";
-postWord="4d8a.html";
-keyword="index";
 
-echo "&lt;meta http-equiv=\"refresh\" content=\"0;url=file://$monkey/docs/$preWord/$keyword$postWord\"&gt;";
+echo "&lt;meta http-equiv=\"refresh\" content=\"0;url=file://$monkey/docs/html/index.html\"&gt;";
 </string>
 	<key>input</key>
 	<string>none</string>
@@ -19,7 +16,7 @@ echo "&lt;meta http-equiv=\"refresh\" content=\"0;url=file://$monkey/docs/$preWo
 	<key>name</key>
 	<string>View documentation</string>
 	<key>output</key>
-	<string>discard</string>
+	<string>showAsHTML</string>
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>uuid</key>

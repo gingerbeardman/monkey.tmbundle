@@ -5,9 +5,9 @@
 	<key>beforeRunningCommand</key>
 	<string>saveActiveFile</string>
 	<key>command</key>
-	<string># if TM_MONKEY is not set, assume trans_mac to be in the user's PATH
+	<string># if TM_MONKEY is not set, assume transcc_mac to be in the user's PATH
 if [[ -n "$TM_MONKEY" ]] ; then
-	TRANS="$TM_MONKEY/bin/trans_macos"
+	TRANS="$TM_MONKEY/bin/transcc_macos"
 else
 	exit_show_tool_tip \
 "TM_MONKEY shell variable not set.
@@ -45,14 +45,14 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 	MODGREP=`grep -i -E -e "^[[:space:]]*module[[:space:]]+(\w+\.\w+)" "$MNKY_COMPILE_PATH" | grep -E -e "\w+\.\w+" -o | tr '[:upper:]' '[:lower:]'`
 
 	#scan for build options
-	TARGET='html5'
+	TARGET='Html5_Game'
 	CONFIG='debug'
 	RUNAFTER='NO'
 	CLEANBUILD='NO'
      UPDATE='NO'
 
 	for BUILDOPT in `grep -hiE -e "^[^\\w\\d]*'[^\\w\\d]*buildopt:[^\\d\\w]*\\w+" "$MNKY_COMPILE_PATH" | \
-		ruby -w -e "puts STDIN.read().downcase().gsub(/^\s*'\s*buildopt:\s*/,\"\").gsub(/\r?/, \"\")"` ;
+		ruby -w -e "puts STDIN.read().gsub(/^\s*'\s*buildopt:\s*/,\"\").gsub(/\r?/, \"\")"` ;
 	do
 		case "$BUILDOPT" in
 		'run')
@@ -70,26 +70,26 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 		'release')
 			CONFIG='release'
 		;;
-		'html5')
-			TARGET='html5'
+		'Html5_Game')
+			TARGET='Html5_Game'
 		;;
-		'flash')
-			TARGET='flash'
+		'Flash_Game')
+			TARGET='Flash_Game'
 		;;
-		'xna')
-			TARGET='xna'
+		'Xna_Game')
+			TARGET='Xna_Game'
 		;;
-		'android')
-			TARGET='android'
+		'Android_Game')
+			TARGET='Android_Game'
 		;;
-		'ios')
-			TARGET='ios'
+		'iOS_Game')
+			TARGET='iOS_Game'
 		;;
-		'glfw')
-			TARGET='glfw'
+		'Glfw_Game')
+			TARGET='Glfw_Game'
 		;;
-		'stdcpp')
-			TARGET='stdcpp'
+		'C++_Tool')
+			TARGET='C++_Tool'
 		;;
 		esac
 	done
@@ -127,7 +127,7 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 	# build/fail?
 	if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 		echo "&lt;h3&gt;Command&lt;/h3&gt;"
-		echo "&lt;pre&gt;$ trans_macos$BUILDOPTS \"$MNKY_COMPILE_PATH\"&lt;/pre&gt;"
+		echo "&lt;pre&gt;$ transcc_macos$BUILDOPTS \"$MNKY_COMPILE_PATH\"&lt;/pre&gt;"
 
 		echo "&lt;h3&gt;Output...&lt;/h3&gt;"
 		echo "&lt;pre&gt;"

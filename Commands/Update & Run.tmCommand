@@ -5,9 +5,9 @@
 	<key>beforeRunningCommand</key>
 	<string>saveActiveFile</string>
 	<key>command</key>
-	<string># if TM_MONKEY is not set, assume trans_mac to be in the user's PATH
+	<string># if TM_MONKEY is not set, assume transcc_mac to be in the user's PATH
 if [[ -n "$TM_MONKEY" ]] ; then
-	TRANS="$TM_MONKEY/bin/trans_macos"
+	TRANS="$TM_MONKEY/bin/transcc_macos"
 else
 	exit_show_tool_tip \
 "TM_MONKEY shell variable not set.
@@ -42,14 +42,14 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 	MODGREP=`grep -i -E -e "^[[:space:]]*module[[:space:]]+(\w+\.\w+)" "$MNKY_COMPILE_PATH" | grep -E -e "\w+\.\w+" -o | tr '[:upper:]' '[:lower:]'`
 
 	#scan for build options
-	TARGET='html5'
+	TARGET='Html5_Game'
 	CONFIG='debug'
 	RUNAFTER='YES'
 	CLEANBUILD='NO'
      UPDATE='YES'
 
 	for BUILDOPT in `grep -hiE -e "^[^\\w\\d]*'[^\\w\\d]*buildopt:[^\\d\\w]*\\w+" "$MNKY_COMPILE_PATH" | \
-		ruby -w -e "puts STDIN.read().downcase().gsub(/^\s*'\s*buildopt:\s*/,\"\").gsub(/\r?/, \"\")"` ;
+		ruby -w -e "puts STDIN.read().gsub(/^\s*'\s*buildopt:\s*/,\"\").gsub(/\r?/, \"\")"` ;
 	do
 		case "$BUILDOPT" in
 		'run')
@@ -67,27 +67,27 @@ if [[ -n "$MNKY_COMPILE_PATH" ]] ; then
 		'release')
 			CONFIG='release'
 		;;
-		'html5')
-			TARGET='html5'
-		;;
-		'flash')
-			TARGET='flash'
-		;;
-		'xna')
-			TARGET='xna'
-		;;
-		'android')
-			TARGET='android'
-		;;
-		'ios')
-			TARGET='ios'
-		;;
-		'glfw')
-			TARGET='glfw'
-		;;
-		'stdcpp')
-			TARGET='stdcpp'
-		;;
+                'Html5_Game')
+                        TARGET='Html5_Game'
+                ;;
+                'Flash_Game')
+                        TARGET='Flash_Game'
+                ;;
+                'Xna_Game')
+                        TARGET='Xna_Game'
+                ;;
+                'Android_Game')
+                        TARGET='Android_Game'
+                ;;
+                'iOS_Game')
+                        TARGET='iOS_Game'
+                ;;
+                'Glfw_Game')
+                        TARGET='Glfw_Game'
+                ;;
+                'C++_Tool')
+                        TARGET='C++_Tool'
+                ;;
 		esac
 	done
 

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>'buildopt: glfw</string>
+	<string>'buildopt: Glfw_Game</string>
 	<key>name</key>
 	<string>Build as glfw</string>
 	<key>scope</key>

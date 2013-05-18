@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>'buildopt: stdcpp</string>
+	<string>'buildopt: C++_Tool</string>
 	<key>name</key>
 	<string>Build as stdcpp</string>
 	<key>scope</key>

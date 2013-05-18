@@ -6,6 +6,8 @@
 	<string>'buildopt: Html5_Game</string>
 	<key>name</key>
 	<string>Build as html5</string>
+	<key>scope</key>
+	<string>source.monkey</string>
 	<key>uuid</key>
 	<string>1FA722F5-6656-4ECC-AADC-A22B9787B0A2</string>
 </dict>

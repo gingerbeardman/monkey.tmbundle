@@ -70,7 +70,7 @@ When using the Build App and Run App commands, your main source file (either the
 
 - **Release & Debug** - `debug`, `release`  
 Specifies whether or not to compile the program in debug mode.
-- **Target** - `html5`, `flash`, `xna`, `android`, `ios`, `glfw`, `stdcpp`  
+- **Target** - `Html5_Game`, `Flash_Game`, `Xna_Game`, `Android_Game`, `iOS_Game`, `Glfw_Game`, `C++_Tool`  
 Specifies what type of target to produce. Only targets that are installed correctly on your machine will be available.
 - **Run After Build** - `run`  
 Executes the resulting output immediately after building it.

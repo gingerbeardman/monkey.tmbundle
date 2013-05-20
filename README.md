@@ -40,13 +40,23 @@ Easily see if you're using the most recent version of the bundle
 **Code Folding**, **Configurable Shortcut Keys**  
 ...and more!
 
+## Download
+
+https://github.com/gingerbeardman/monkey.tmbundle/archive/master.zip
+
 ## Installation
 
-Please check that the download is named `monkey.tmbundle` and not something else. You may have to rename it.
+* Unzip download if it has not been automatically unzipped.
 
-To use unzip and double click, or manually move the bundle to:  
+* Rename folder `monkey.tmbundle-master` to `monkey.tmbundle`.
 
-	/Users/username/Library/Application Support/TextMate/Bundles/monkey.tmbundle
+* Double click, or manually move the bundle to:
+
+	TextMate 2:  
+	`/Users/username/Library/Application Support/Avian/Bundles/monkey.tmbundle`
+
+	TextMate 1.5:  
+	`/Users/username/Library/Application Support/TextMate/Bundles/monkey.tmbundle`
 
 ## Usage
 
@@ -98,12 +108,13 @@ monkey.tmbundle is made available under a [Creative Commons Attribution-Share Al
 ## Changelog
 
 **2013-05-20**  
-Corrected version checking  
-Moved Drawpoint to Declarations  
+Corrected version checking (issue 3)  
+Moved Drawpoint to Declarations (issue 4)  
+Renamed and relinked download bundle menu item
 Thanks to https://github.com/tluyben  
-- Updated Build & Run + relevant snippets (to v70)  
+- Updated Build & Run + relevant snippets to v70  
 - Documentation target update  
-- Fixed the doc viewer and reworked the build option snippets so they work with the new targets  
+- Fixed the doc viewer and reworked the build option snippets so they work with the new targets (issue 5)  
 
 **2012-05-04**  
 - Added Set, FloatSet, IntSet, StringSet (v54c)  

@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>CURRENT="20111020"
+	<string>CURRENT="20130520"
 WEB=`curl -s https://raw.github.com/gingerbeardman/monkey.tmbundle/master/version.txt`
 
 if [ "$CURRENT" -lt "$WEB" ]

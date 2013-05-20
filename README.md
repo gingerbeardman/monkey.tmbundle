@@ -5,6 +5,10 @@ This bundle lets you to use the Mac OS X editor [TextMate](http://macromates.com
 
 Created by Matt Sephton, [http://www.gingerbeardman.com/monkey/](http://www.gingerbeardman.com/monkey/)
 
+## Download
+
+https://github.com/gingerbeardman/monkey.tmbundle/archive/master.zip
+
 ## Features
 
 **Syntax Highlighting**  
@@ -39,10 +43,6 @@ Easily see if you're using the most recent version of the bundle
 
 **Code Folding**, **Configurable Shortcut Keys**  
 ...and more!
-
-## Download
-
-https://github.com/gingerbeardman/monkey.tmbundle/archive/master.zip
 
 ## Installation
 

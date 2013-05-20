@@ -97,6 +97,14 @@ monkey.tmbundle is made available under a [Creative Commons Attribution-Share Al
 
 ## Changelog
 
+**2013-05-20**  
+Corrected version checking  
+Moved Drawpoint to Declarations  
+Thanks to https://github.com/tluyben  
+- Updated Build & Run + relevant snippets (to v70)  
+- Documentation target update  
+- Fixed the doc viewer and reworked the build option snippets so they work with the new targets  
+
 **2012-05-04**  
 - Added Set, FloatSet, IntSet, StringSet (v54c)  
 - Added DrawPoint (v50)

@@ -5,18 +5,29 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>open https://github.com/gingerbeardman/monkey.tmbundle/downloads</string>
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+
+open https://github.com/gingerbeardman/monkey.tmbundle/archive/master.zip</string>
 	<key>input</key>
 	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>^$§</string>
 	<key>name</key>
-	<string>Open bundle download page on github...</string>
-	<key>output</key>
+	<string>Download latest bundle from github</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
 	<string>discard</string>
 	<key>scope</key>
 	<string>source.monkey</string>
 	<key>uuid</key>
 	<string>62313605-129B-4DA1-B2E0-9F7A5FC3F757</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>

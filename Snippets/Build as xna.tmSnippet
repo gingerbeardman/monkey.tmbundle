@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>'buildopt: xna</string>
+	<string>'buildopt: Xna_Game</string>
 	<key>name</key>
 	<string>Build as xna</string>
 	<key>scope</key>

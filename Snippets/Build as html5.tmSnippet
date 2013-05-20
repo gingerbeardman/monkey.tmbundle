@@ -3,14 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>'buildopt: html5</string>
+	<string>'buildopt: Html5_Game</string>
 	<key>name</key>
 	<string>Build as html5</string>
 	<key>scope</key>
 	<string>source.monkey</string>
-	<key>tabTrigger</key>
-	<string>html</string>
 	<key>uuid</key>
-	<string>B5CC7ADF-FBFC-432A-829D-F21F2E16200C</string>
+	<string>1FA722F5-6656-4ECC-AADC-A22B9787B0A2</string>
 </dict>
 </plist>

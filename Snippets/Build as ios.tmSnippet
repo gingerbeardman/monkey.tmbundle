@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>'buildopt: ios</string>
+	<string>'buildopt: iOS_Game</string>
 	<key>name</key>
 	<string>Build as ios</string>
 	<key>scope</key>

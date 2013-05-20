@@ -108,9 +108,9 @@ monkey.tmbundle is made available under a [Creative Commons Attribution-Share Al
 ## Changelog
 
 **2013-05-20**  
-Corrected version checking (issue 3)  
-Moved Drawpoint to Declarations (issue 4)  
-Renamed and relinked "download bundle" menu item  
+- Corrected version checking (issue 3)  
+- Moved Drawpoint to Declarations (issue 4)  
+- Renamed and relinked "download bundle" menu item  
 Thanks to https://github.com/tluyben  
 - Updated Build & Run and relevant snippets to v70  
 - Documentation target update (issue 5)  

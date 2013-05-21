@@ -44,6 +44,14 @@ Easily see if you're using the most recent version of the bundle
 **Code Folding**, **Configurable Shortcut Keys**  
 ...and more!
 
+## Editors
+
+All the above features are supported in TextMate 1.5 out of the box.
+
+Support in other editors will vary. See a comparison table here: http://www.gingerbeardman.com/monkey/
+
+Please ask the developer of your chosen editor about improving TextMate bundle support to enable any features you are missing.
+
 ## Installation
 
 * Unzip download if it has not been automatically unzipped.
@@ -96,7 +104,9 @@ where 'option' is the option you're enabling for the Build and Run commands.  Th
 Use of the bundle under Windows using the [E Text Editor](http://www.e-texteditor.com/) is possible. I'll happily include any hints and tips here if you have them. Otherwise, please consult the [E forum](http://www.e-texteditor.com/forum/viewforum.php?f=6).
 
 ## Support
-You can talk about the bundle on the [official monkey forum](http://www.monkeycoder.co.nz/Community/posts.php?topic=69)
+You can talk about the bundle on the [official monkey forum](http://www.monkeycoder.co.nz/Community/posts.php?topic=69).
+
+Please file any pull requests, or issues on [github](https://github.com/gingerbeardman/monkey.tmbundle/issues).
 
 ## Requirements
 - TextMate [http://macromates.com](http://macromates.com)

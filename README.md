@@ -113,7 +113,7 @@ Please file any pull requests, or issues on [github](https://github.com/gingerbe
 - monkey [http://www.monkeycoder.co.nz](http://www.monkeycoder.co.nz)
 
 ## License
-monkey.tmbundle is made available under a [Creative Commons Attribution-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0).
+monkey.tmbundle is made available under the [MIT License](http://choosealicense.com/licenses/mit/).
 
 ## Changelog
 

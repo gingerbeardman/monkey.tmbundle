@@ -117,6 +117,9 @@ monkey.tmbundle is made available under the [MIT License](http://choosealicense.
 
 ## Changelog
 
+**2016-03-19**
+- Changed to MIT License
+
 **2013-05-20**  
 - Corrected version checking (issue 3)  
 - Moved Drawpoint to Declarations (issue 4)  
